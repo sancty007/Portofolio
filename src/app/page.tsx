@@ -1,113 +1,170 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Github,
+  Linkedin,
+  Mail,
+} from "lucide-react";
+
+const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
+
+const projects = [
+  {
+    title: "E-commerce App",
+    description: "Une application complète de commerce électronique",
+  },
+  {
+    title: "Dashboard Analytics",
+    description: "Un tableau de bord interactif pour l'analyse de données",
+  },
+  {
+    title: "Social Media Platform",
+    description: "Une plateforme de médias sociaux moderne",
+  },
+];
+
+export default function Portfolio() {
+  const [currentProject, setCurrentProject] = useState(0);
+
+  const nextProject = () => {
+    setCurrentProject((prev) => (prev + 1) % projects.length);
+  };
+
+  const prevProject = () => {
+    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-teal-900 text-white">
+      <header className="p-6">
+        <motion.h1
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-bold text-center"
+        >
+          sanctifier Yaw-Mensah
+        </motion.h1>
+        <motion.p
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl text-center mt-2"
+        >
+          Développeur Full Stack
+        </motion.p>
+      </header>
+
+      <main className="container mx-auto px-6 py-12">
+        <section className="mb-16">
+          <motion.h2
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl font-semibold mb-6"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+            Compétences
+          </motion.h2>
+          <div className="flex flex-wrap gap-4">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                className="bg-white bg-opacity-20 rounded-full px-4 py-2"
+              >
+                {skill}
+              </motion.div>
+            ))}
+          </div>
+        </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <section className="mb-16">
+          <motion.h2
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl font-semibold mb-6"
+          >
+            Projets
+          </motion.h2>
+          <div className="relative">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentProject}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white bg-opacity-10 p-6 rounded-lg"
+              >
+                <h3 className="text-2xl font-semibold mb-2">
+                  {projects[currentProject].title}
+                </h3>
+                <p>{projects[currentProject].description}</p>
+              </motion.div>
+            </AnimatePresence>
+            <button
+              onClick={prevProject}
+              className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={nextProject}
+              className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <section>
+          <motion.h2
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl font-semibold mb-6"
+          >
+            Contact
+          </motion.h2>
+          <div className="flex justify-center space-x-6">
+            <motion.a
+              href="https://github.com/sancty007/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-white bg-opacity-20 p-3 rounded-full"
+            >
+              <Github size={24} />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/sanctifier-yaw-mensah/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-white bg-opacity-20 p-3 rounded-full"
+            >
+              <Linkedin size={24} />
+            </motion.a>
+            <motion.a
+              href="sanctifieryawmensah55@gmail.com"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-white bg-opacity-20 p-3 rounded-full"
+            >
+              <Mail size={24} />
+            </motion.a>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
