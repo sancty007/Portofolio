@@ -14,16 +14,14 @@ const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
 const projects = [
   {
-    title: "E-commerce App",
-    description: "Une application complète de commerce électronique",
+    title: "Football Tournament Management",
+    description:
+      "Une application de gestion complète de tournois de football, incluant les équipes, les matchs et les classements.",
   },
   {
-    title: "Dashboard Analytics",
-    description: "Un tableau de bord interactif pour l'analyse de données",
-  },
-  {
-    title: "Social Media Platform",
-    description: "Une plateforme de médias sociaux moderne",
+    title: "Yeekola",
+    description:
+      "Une plateforme interactive , dédiée à l'organisation d'événements et au partage de connaissances.",
   },
 ];
 
