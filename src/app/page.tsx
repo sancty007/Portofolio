@@ -35,7 +35,7 @@ export default function Portfolio() {
   return (
     <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-teal-900 text-white md:py-24 ">
       {/*  header  */}
-      <header className="mb-24 p-16 ">
+      <header className="px-4 md:mb-24 md:p-16 ">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-20">
           <div className="order-2 md:order-1 text-left md:text-left">
             <motion.h1
@@ -58,7 +58,7 @@ export default function Portfolio() {
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="max-w-lg text-gray-300"
+              className="md:max-w-lg text-gray-300"
             >
               <span className="font-bold ">
                 Et si vos applications devenaient aussi indispensables que votre
