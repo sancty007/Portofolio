@@ -144,7 +144,7 @@ export default function Contact() {
         </div>
 
         {/*  champs à droite  */}
-        <div className="p-6 rounded shadow-[#3E2ABF] shadow-lg">
+        <div className="p-4 md:p-6 rounded shadow-[#3E2ABF] shadow-lg">
           <h3 className="text-xl font-semibold mb-4">Informations</h3>
           <p className="mb-2">
             <i className="fas fa-phone mr-2 text-white"></i>+242 068223310

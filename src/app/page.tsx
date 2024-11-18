@@ -58,7 +58,7 @@ export default function Portfolio() {
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="md:max-w-lg text-gray-300"
+              className="md:max-w-lg md:text-gray-300"
             >
               <span className="font-bold ">
                 Et si vos applications devenaient aussi indispensables que votre

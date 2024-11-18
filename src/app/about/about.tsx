@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center md:space-y-10 gap-20" id="about">
+    <div
+      className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center md:space-y-10 gap-20"
+      id="about"
+    >
       <div className="gap-20 ">
         <Image
           src="/images/about_me2.jpg"
@@ -16,7 +19,7 @@ export default function About() {
         <h1 className="border-4 border-[#FFFF9C] rounded-tl-2xl rounded-br-2xl px-24 py-6 text-center text-xl md:text-2xl inline-block">
           About
         </h1>
-        <p>
+        <p className="">
           Je suis Sanctifier Yaw-Mensah, développeur passionné par la création
           d&apos;applications web innovantes. Étudiant en informatique, je me
           spécialise dans le développement full-stack avec des compétences en
