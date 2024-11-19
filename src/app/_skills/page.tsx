@@ -4,18 +4,6 @@ import { motion } from "framer-motion";
 
 const technologies = [
   {
-    name: "HTML",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        className="w-6 h-6 text-[#E34F26]"
-        fill="currentColor"
-      >
-        <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
-      </svg>
-    ),
-  },
-  {
     name: "React",
     icon: (
       <svg
@@ -58,19 +46,19 @@ export default function Skills() {
     <motion.div
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
-      transition={{ duration: 0.5 }}
-      className="container flex flex-col gap-4 pb-4"
+      transition={{ duration: 0.8, delay: 0.5 }}
+      className="container flex flex-col gap-4 pb-4 "
       id="skills"
     >
-      <p className="text-3xl font-semibold border-b border-blue-500  pb-8 py-12">
-        Compétences
+      <p className=" text-3xl font-semibold border-b border-blue-500  pb-8 py-12">
+        {"<"}Compétences{" / >"}
       </p>
 
       <div className="mt-8 rounded-full flex flex-wrap gap-4">
         {technologies.map((tech) => (
           <button
             key={tech.name}
-            className=" group flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-full text-sm font-medium  focus:outline-none focus:ring-2 ring-[#FFFF9C] focus:ring-offset-2"
+            className="group-[skills]: flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-full text-sm font-medium  focus:outline-none focus:ring-2 ring-[#FFFF9C] focus:ring-offset-2"
           >
             {tech.icon}
             <span>{tech.name}</span>

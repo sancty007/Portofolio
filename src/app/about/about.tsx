@@ -1,36 +1,50 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
   return (
     <div
-      className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center md:space-y-10 gap-20"
+      className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-20 py-24"
       id="about"
     >
-      <div className="gap-20 ">
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="gap-20 h-80 "
+      >
         <Image
           src="/images/about_me2.jpg"
-          width={500}
-          height={500}
-          className="w-full h-full object-cover"
+          width={300}
+          height={300}
+          className="w-full h-full object-cover rounded-lg"
           alt="about sanctifier yaw-mensah"
         />
-      </div>
-      <div className="space-y-10">
-        <h1 className="border-4 border-[#FFFF9C] rounded-tl-2xl rounded-br-2xl px-24 py-6 text-center text-xl md:text-2xl inline-block">
-          About
-        </h1>
-        <p className="">
-          Je suis Sanctifier Yaw-Mensah, développeur passionné par la création
-          d&apos;applications web innovantes. Étudiant en informatique, je me
-          spécialise dans le développement full-stack avec des compétences en
-          React, Django, et Docker. Mon objectif est de concevoir des solutions
-          performantes et intuitives, en me défiant constamment d&apos;explorer
-          de nouvelles technologies. Chaque projet est une opportunité de
-          repousser mes limites et de livrer des produits à forte valeur ajoutée
-          pour les utilisateurs. Qu&apos;il s&apos;agisse d&apos;applications
-          mobiles, de sites web dynamiques ou de plateformes complexes, je
-          m&apos;engage pleinement dans chaque défi.
-        </p>
+      </motion.div>
+      {/* 
+      border-[#FFFF9C] rounded-tl-2xl rounded-br-2xl border-4  */}
+      <div className="space-y-5 ">
+        <motion.h1
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="py-6 text-xl md:text-3xl font-bold inline-block"
+        >
+          {"<About />"}
+        </motion.h1>
+        <motion.p
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className=" leading-loose "
+        >
+          Je suis Sanctifier Yaw-Mensah, développeur full-stack passionné par la
+          création d&apos;applications web performantes et intuitives. Étudiant
+          en informatique, je maîtrise des technologies comme React, Django et
+          Docker. Chaque projet est pour moi l&apos;occasion de relever des
+          défis, d&apos;explorer de nouvelles technologies et de livrer des
+          solutions innovantes qui apportent une réelle valeur aux utilisateurs.
+        </motion.p>
       </div>
     </div>
   );

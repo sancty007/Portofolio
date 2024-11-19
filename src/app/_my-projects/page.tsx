@@ -61,9 +61,10 @@ export default function Projets() {
         transition={{ duration: 0.5 }}
         className="text-3xl font-semibold  border-b border-blue-500 pb-8 py-12 mb-20"
       >
-        {"projects"}
+        {" <"} projects
+        {" / >"}
       </motion.h2>
-      <div className="relative bg-white bg-opacity-10 p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-[#3E2ABF]  hover:shadow-md">
+      <div className="relative bg-white bg-opacity-10 p-20 rounded-lg shadow-lg transition-all duration-300 hover:shadow-[#3E2ABF] hover:shadow-md space-y-8">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentProject}
@@ -71,18 +72,18 @@ export default function Projets() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.3 }}
-            className="flex flex-col md:flex-row items-center gap-8"
+            className="md:flex-row items-center space-y-8"
           >
-            <div className="md:w-1/2">
+            <div className="w-full">
               <Image
                 src={projects[currentProject].image}
                 alt={projects[currentProject].title}
-                width={500}
-                height={300}
-                className="rounded-lg shadow-md"
+                width={1000}
+                height={500}
+                className="shadow-md w-full"
               />
             </div>
-            <div className="md:w-1/2 ">
+            <div className="">
               <h3 className="text-2xl font-semibold mb-2 text-blue-300">
                 {projects[currentProject].title}
               </h3>
@@ -111,16 +112,17 @@ export default function Projets() {
           </motion.div>
         </AnimatePresence>
 
+        {/*  transform -translate-y-1/2 transition-colors duration-200*/}
         <button
           onClick={prevProject}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#3E2ABF] p-2 rounded-full hover:bg-[#312581] transition-colors duration-200"
+          className="absolute top-1/2 left-4  bg-[#3E2ABF] p-2 rounded-full hover:bg-[#312581] "
           aria-label={"previousProject"}
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={nextProject}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 hover:bg-[#312581]  p-2 rounded-full bg-[#3E2ABF]  transition-colors duration-200"
+          className="absolute top-1/2 right-4  hover:bg-[#312581]  p-2 rounded-full bg-[#3E2ABF]  transition-colors duration-200"
           aria-label={"nextProject"}
         >
           <ChevronRight size={24} />

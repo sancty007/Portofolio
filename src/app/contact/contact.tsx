@@ -26,16 +26,17 @@ export default function Contact() {
   return (
     <>
       <section className="container " id="contact">
+        <div className=""></div>
         <motion.h2
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="text-3xl font-semibold mb-6 pb-8 py-12  border-b border-blue-500"
         >
-          Contact
+          {" <"}Contact{" / >"}
         </motion.h2>
       </section>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center py-12 px-4 sm:px-6 ">
+      <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent) container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center py-12 px-4 sm:px-6 ">
         <div className="max-w-md w-full space-y-2">
           {/* Phone container */}
           <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden">
@@ -45,7 +46,7 @@ export default function Contact() {
                 Email Us
               </h2>
 
-              <div className="px-6 py-8">
+              <div className="px-6 py-8 ">
                 {isSubmitted ? (
                   <div className="text-center ">
                     <FontAwesomeIcon
@@ -62,7 +63,7 @@ export default function Contact() {
                 ) : (
                   <form
                     onSubmit={handleSubmit}
-                    className="space-y-4 text-black"
+                    className="space-y-4 text-black "
                   >
                     <div>
                       <label
@@ -133,7 +134,7 @@ export default function Contact() {
                         type="submit"
                         className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium bg-[#3E2ABF] text-white hover:text-white shadow-blue-300 focus:outline-none "
                       >
-                        Envoyer
+                        send
                       </button>
                     </div>
                   </form>
@@ -144,7 +145,7 @@ export default function Contact() {
         </div>
 
         {/*  champs à droite  */}
-        <div className="p-4 md:p-6 rounded shadow-[#3E2ABF] shadow-lg">
+        <div className="p-4 md:p-6 r shadow-[#3E2ABF] shadow-lg  rounded-lg">
           <h3 className="text-xl font-semibold mb-4">Informations</h3>
           <p className="mb-2">
             <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
