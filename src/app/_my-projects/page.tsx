@@ -54,7 +54,7 @@ export default function Projets() {
   };
 
   return (
-    <section className=" container mb-16" id="projects">
+    <section className="container mb-16" id="projects">
       <motion.h2
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -64,42 +64,41 @@ export default function Projets() {
         {" <"} projects
         {" / >"}
       </motion.h2>
-      <div className="relative bg-white bg-opacity-10 p-20 rounded-lg shadow-lg transition-all duration-300 hover:shadow-[#3E2ABF] hover:shadow-md space-y-8">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentProject}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.3 }}
-            className="md:flex-row items-center space-y-8"
-          >
-            <div className="w-full">
-              <Image
-                src={projects[currentProject].image}
-                alt={projects[currentProject].title}
-                width={1000}
-                height={500}
-                className="shadow-md w-full"
-              />
-            </div>
-            <div className="">
-              <h3 className="text-2xl font-semibold mb-2 text-blue-300">
-                {projects[currentProject].title}
-              </h3>
-              <p className="text-gray-300 mb-4">
-                {projects[currentProject].description}
-              </p>
-              <div className="space-x-4">
-                <Link
-                  href={projects[currentProject].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-[#3E2ABF] text-white px-4 py-2 rounded-md hover:bg-[#312581] transition-colors duration-200"
-                >
-                  {"viewProject"}
-                </Link>
-                {/*  <Link
+      <div className="relative bg-white p-5 bg-opacity-10 md:p-20 rounded-lg shadow-lg transition-all duration-300 hover:shadow-[#3E2ABF] hover:shadow-md space-y-8">
+        <motion.div
+          key={currentProject}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.3 }}
+          className="md:flex-row items-center space-y-8"
+        >
+          <div className="md:w-full">
+            <Image
+              src={projects[currentProject].image}
+              alt={projects[currentProject].title}
+              width={1000}
+              height={500}
+              className="md:shadow-md md:w-full"
+            />
+          </div>
+          <div className="space-y-4">
+            <h3 className="md:text-2xl font-semibold md:mb-2 text-blue-300 ">
+              {projects[currentProject].title}
+            </h3>
+            <p className="text-gray-300 md:mb-4">
+              {projects[currentProject].description}
+            </p>
+            <div className="md:space-x-4">
+              <Link
+                href={projects[currentProject].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-[#3E2ABF] text-white px-4 py-2 rounded-md hover:bg-[#312581] transition-colors duration-200"
+              >
+                {"viewProject"}
+              </Link>
+              {/*  <Link
                   href={projects[currentProject].gitHubLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -107,26 +106,27 @@ export default function Projets() {
                 >
                   {"show github"}
                 </Link> */}
-              </div>
             </div>
-          </motion.div>
-        </AnimatePresence>
+          </div>
+        </motion.div>
 
         {/*  transform -translate-y-1/2 transition-colors duration-200*/}
-        <button
-          onClick={prevProject}
-          className="absolute top-1/2 left-4  bg-[#3E2ABF] p-2 rounded-full hover:bg-[#312581] "
-          aria-label={"previousProject"}
-        >
-          <ChevronLeft size={24} />
-        </button>
-        <button
-          onClick={nextProject}
-          className="absolute top-1/2 right-4  hover:bg-[#312581]  p-2 rounded-full bg-[#3E2ABF]  transition-colors duration-200"
-          aria-label={"nextProject"}
-        >
-          <ChevronRight size={24} />
-        </button>
+        <div className="">
+          <button
+            onClick={prevProject}
+            className="absolute  md:top-1/2 md:left-4  bg-[#3E2ABF] p-2 rounded-full hover:bg-[#312581] "
+            aria-label={"previousProject"}
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button
+            onClick={nextProject}
+            className="absolute md:top-1/2 right-4 md:right-4  hover:bg-[#312581]  p-2 rounded-full bg-[#3E2ABF] transition-colors duration-200"
+            aria-label={"nextProject"}
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
       </div>
     </section>
   );

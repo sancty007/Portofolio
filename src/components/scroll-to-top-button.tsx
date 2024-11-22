@@ -10,7 +10,7 @@ export default function ScrollToTopButton() {
   useEffect(() => {
     const toggleVisibility = () => {
       // Show button when page is scrolled down 300px
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -35,12 +35,12 @@ export default function ScrollToTopButton() {
 
   return (
     <Button
-      className="animate-bounce fixed bottom-4 right-4 p-2 text-mosala_vert bg-white rounded-full shadow-lg transition-opacity duration-1000 z-50"
+      className="animate-bounce fixed bottom-4 right-4 p-2 hover:bg-gray-500 bg-white rounded-full shadow-lg transition-opacity duration-1000 z-50"
       onClick={scrollToTop}
       aria-label="Retour en haut de la page"
       size="icon"
     >
-      <ArrowUp className="h-6 w-6" />
+      <ArrowUp className="h-6 w-6 text-black" />
     </Button>
   );
 }

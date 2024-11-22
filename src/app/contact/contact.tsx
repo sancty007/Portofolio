@@ -36,7 +36,8 @@ export default function Contact() {
           {" <"}Contact{" / >"}
         </motion.h2>
       </section>
-      <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent) container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center py-12 px-4 sm:px-6 ">
+
+      <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent) container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center py-12 px-2 sm:px-6 ">
         <div className="max-w-md w-full space-y-2">
           {/* Phone container */}
           <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden">

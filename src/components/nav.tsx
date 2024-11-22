@@ -24,9 +24,7 @@ export default function Nav() {
           </Link>
         ))}
       </div>
-      <Button className="px-6 m-8 bg-[#3E2ABF] hover:bg-[#8c7cf3] text-[#FFFF9C] hover:text-[#f3f3de] ">
-        Contact me
-      </Button>
+      <Button className="px-6 m-8  hover:text-[#f3f3de] ">Contact me</Button>
     </nav>
   );
 }

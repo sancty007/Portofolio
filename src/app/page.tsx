@@ -52,7 +52,7 @@ export default function Portfolio() {
       <div className="">
         <header className="container">
           <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="order-2 md:order-1 text-center md:tracking-wide space-y-8">
+            <div className="order-2 md:order-1 md:text-center md:tracking-wide space-y-8">
               <motion.h1
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -112,7 +112,7 @@ export default function Portfolio() {
           </div>
         </header>
         <main className=" space-y-32 ">
-          <Background />
+          {/* <Background /> */}
           {/* mes Compétences  */}
           <Skills />
 

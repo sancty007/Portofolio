@@ -58,7 +58,7 @@ export default function Skills() {
         {technologies.map((tech) => (
           <button
             key={tech.name}
-            className="group-[skills]: flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-full text-sm font-medium  focus:outline-none focus:ring-2 ring-[#FFFF9C] focus:ring-offset-2"
+            className="group flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-full text-sm font-medium  focus:outline-none focus:ring-2 ring-blue-500 "
           >
             {tech.icon}
             <span>{tech.name}</span>
