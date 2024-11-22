@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function About() {
   return (
     <div
-      className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-20 py-24"
+      className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center md:gap-20 md:py-24"
       id="about"
     >
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="gap-20 h-80 "
+        className="md:gap-20 h-80 "
       >
         <Image
           src="/images/about_me2.jpg"
@@ -23,7 +23,7 @@ export default function About() {
       </motion.div>
       {/* 
       border-[#FFFF9C] rounded-tl-2xl rounded-br-2xl border-4  */}
-      <div className="space-y-5 ">
+      <div className="md:space-y-5 ">
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

@@ -6,7 +6,8 @@ import Projets from "./_my-projects/page";
 import Skills from "./_skills/page";
 import About from "./about/about";
 import Contact from "./contact/contact";
-import Nav from "@/components/nav";
+/* import Nav from "@/components/nav"; */
+import Image from "next/image";
 import Background from "@/components/ui/background";
 
 const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
@@ -50,7 +51,21 @@ export default function Portfolio() {
       {/*  header  */}
 
       <div className="">
-        <header className="container">
+        <header className="container space-y-4 ">
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className=" relative z-10 flex justify-center items-center "
+          >
+            <Image
+              src="/images/profil2.jpg"
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className="rounded-full w-52 h-52 object-cover"
+            />
+          </motion.div>
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="order-2 md:order-1 md:text-center md:tracking-wide space-y-8">
               <motion.h1
@@ -65,7 +80,7 @@ export default function Portfolio() {
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-xl  md:text-2xl text-blue-300 mb-4 font-bold"
+                className="text-xl  md:text-2xl text-blue-300 md:mb-4 font-bold"
               >
                 Développeur Full-Stack | Spécialiste React|Django
               </motion.p>
@@ -111,8 +126,8 @@ export default function Portfolio() {
             </div> */}
           </div>
         </header>
-        <main className=" space-y-32 ">
-          {/* <Background /> */}
+        <main className=" md:space-y-32 ">
+          <Background />
           {/* mes Compétences  */}
           <Skills />
 

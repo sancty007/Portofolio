@@ -61,7 +61,7 @@ export default function Projets() {
         transition={{ duration: 0.5 }}
         className="text-3xl font-semibold  border-b border-blue-500 pb-8 py-12 mb-20"
       >
-        {" <"} projects
+        {" <"} Projects
         {" / >"}
       </motion.h2>
       <div className="relative bg-white p-5 bg-opacity-10 md:p-20 rounded-lg shadow-lg transition-all duration-300 hover:shadow-[#3E2ABF] hover:shadow-md space-y-8">

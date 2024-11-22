@@ -54,7 +54,7 @@ export default function Skills() {
         {"<"}Compétences{" / >"}
       </p>
 
-      <div className="mt-8 rounded-full flex flex-wrap gap-4">
+      <div className="relative z-10 mt-8 rounded-full flex flex-wrap gap-4">
         {technologies.map((tech) => (
           <button
             key={tech.name}
