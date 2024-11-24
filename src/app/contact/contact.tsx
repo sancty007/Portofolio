@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="container " id="contact">
+      <section className="container" id="contact">
         <div className=""></div>
         <motion.h2
           initial={{ x: -50, opacity: 0 }}
@@ -37,10 +37,10 @@ export default function Contact() {
         </motion.h2>
       </section>
 
-      <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent) container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center md:py-12 px-2 sm:px-6 ">
+      <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent) container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center md:py-12 px-2 sm:px-6 space-y-4">
         <div className="max-w-md w-full space-y-2">
           {/* Phone container */}
-          <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden">
+          <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden ">
             {/* Phone screen */}
             <div className="absolute top-[14px] left-[14px] right-[14px] bottom-[14px] bg-white rounded-[46px] overflow-y-auto ">
               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 shadow-sm  pb-8 py-12 ">

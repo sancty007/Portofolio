@@ -12,19 +12,21 @@ const navSection: { [path: string]: string } = {
 };
 export default function Nav() {
   return (
-    <nav className="hidden container  md:flex justify-between items-center h-16 bg-opacity-30">
-      <div className="flex items-center space-x-4 pr-6 ">
+    <nav className="lg:max-w-screen-lg mx-auto fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+      <div className=" p-2 gap-4 flex md:space-x-4 md:flex items-center md:p-4 bg-slate-950/70 bg-opacity-60 backdrop-blur-lg shadow-sm drop-shadow-lg shadow-[#3E2ABF] rounded-md text-sm">
         {Object.entries(navSection).map(([path, label]) => (
           <Link
             key={path}
             href={path}
-            className=" hover:border-b-2 border-[#3E2ABF] transition-colors duration-200 "
+            className="text-white hover:border-b-2 border-[#3E2ABF] transition-colors duration-200"
           >
             {label}
           </Link>
         ))}
+        <Button className="px-6 hover:text-[#f3f3de] bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
+          Contact me
+        </Button>
       </div>
-      <Button className="px-6 m-8  hover:text-[#f3f3de] ">Contact me</Button>
     </nav>
   );
 }

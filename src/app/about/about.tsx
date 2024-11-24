@@ -17,7 +17,7 @@ export default function About() {
           src="/images/about_me2.jpg"
           width={300}
           height={300}
-          className="w-full h-full object-cover rounded-lg"
+          className="w-full h-full object-cover rounded-lg "
           alt="about sanctifier yaw-mensah"
         />
       </motion.div>
@@ -40,10 +40,11 @@ export default function About() {
         >
           Je suis Sanctifier Yaw-Mensah, développeur full-stack passionné par la
           création d&apos;applications web performantes et intuitives. Étudiant
-          en informatique, je maîtrise des technologies comme React, Django et
-          Docker. Chaque projet est pour moi l&apos;occasion de relever des
-          défis, d&apos;explorer de nouvelles technologies et de livrer des
-          solutions innovantes qui apportent une réelle valeur aux utilisateurs.
+          en informatique, je maîtrise des technologies comme{" "}
+          <span className="bg-blue-500 px-2 ">React</span>, Django et Docker.
+          Chaque projet est pour moi l&apos;occasion de relever des défis,
+          d&apos;explorer de nouvelles technologies et de livrer des solutions
+          innovantes qui apportent une réelle valeur aux utilisateurs.
         </motion.p>
       </div>
     </div>

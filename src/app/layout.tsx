@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
 import Nav from "@/components/nav";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Nav />
-        {children}
+      <body className={cn(inter.className, "bg-slate-950")}>
+        <header>
+          <Nav />
+        </header>
+        <main>{children}</main>
       </body>
       <ScrollToTopButton />
     </html>

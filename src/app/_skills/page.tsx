@@ -51,7 +51,7 @@ export default function Skills() {
       id="skills"
     >
       <p className=" text-3xl font-semibold border-b border-blue-500  pb-8 py-12">
-        {"<"}Compétences{" / >"}
+        {"<"}Skills{" / >"}
       </p>
 
       <div className="relative z-10 mt-8 rounded-full flex flex-wrap gap-4">

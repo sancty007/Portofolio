@@ -9,6 +9,7 @@ import Contact from "./contact/contact";
 /* import Nav from "@/components/nav"; */
 import Image from "next/image";
 import Background from "@/components/ui/background";
+import Nav from "@/components/nav";
 
 const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
@@ -47,68 +48,69 @@ export default function Portfolio() {
   /* 
   from-purple-900 via-blue-900 to-teal-900 */
   return (
-    <div className=" py-20 relative h-full w-full bg-slate-950 text-white md:py-40 ">
-      {/*  header  */}
+    <div className="bg-slate-950 ">
+      <div className="   py-20 relative h-full w-full  text-white md:py-40 ">
+        {/*  header  */}
 
-      <div className="">
-        <header className="container space-y-4 ">
-          <motion.div
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className=" relative z-10 flex justify-center items-center "
-          >
-            <Image
-              src="/images/profil2.jpg"
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              className="rounded-full w-52 h-52 object-cover"
-            />
-          </motion.div>
-          <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="order-2 md:order-1 md:text-center md:tracking-wide space-y-8">
-              <motion.h1
-                initial={{ y: -50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="text-2xl  md:text-5xl font-bold mb-2"
-              >
-                Sanctifier Yaw-Mensah
-              </motion.h1>
-              <motion.p
-                initial={{ y: -20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-xl  md:text-2xl text-blue-300 md:mb-4 font-bold"
-              >
-                Développeur Full-Stack | Spécialiste React|Django
-              </motion.p>
-              <div className="flex justify-center md:px-40 leading-loose">
+        <div className="">
+          <header className="container space-y-4 ">
+            <motion.div
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className=" relative z-10 flex justify-center items-center "
+            >
+              <Image
+                src="/images/profil2.jpg"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+                className="rounded-full w-52 h-52 object-cover "
+              />
+            </motion.div>
+            <div className="flex flex-col md:flex-row justify-center items-center">
+              <div className="order-2 md:order-1 md:text-center md:tracking-wide space-y-8">
+                <motion.h1
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-2xl  md:text-5xl font-bold mb-2"
+                >
+                  Sanctifier Yaw-Mensah
+                </motion.h1>
                 <motion.p
                   initial={{ y: -20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  className=" md:text-gray-300 "
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="text-xl  md:text-2xl text-blue-300 md:mb-4 font-bold"
                 >
-                  <span className="font-bold ">
-                    Et si vos applications devenaient aussi indispensables que
-                    votre smartphone ?🥳
-                  </span>{" "}
-                  Passionné par la création d&apos;applications web innovantes,
-                  je conçois des solutions sur mesure avec des technologies
-                  modernes pour offrir des expériences utilisateur
-                  exceptionnelles.{" "}
-                  <span className="font-bold">
-                    {"<"}Je crée des applications qui rendent vos utilisateurs
-                    accro et font la différence.🦾 {" / >"}
-                  </span>
+                  Développeur Full-Stack | Spécialiste React|Django
                 </motion.p>
+                <div className="flex justify-center md:px-40 leading-loose">
+                  <motion.p
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className=" md:text-gray-300 "
+                  >
+                    <span className="font-bold ">
+                      Et si vos applications devenaient aussi indispensables que
+                      votre smartphone ?🥳
+                    </span>{" "}
+                    Passionné par la création d&apos;applications web
+                    innovantes, je conçois des solutions sur mesure avec des
+                    technologies modernes pour offrir des expériences
+                    utilisateur exceptionnelles.{" "}
+                    <span className="font-bold">
+                      {"<"}Je crée des applications qui rendent vos utilisateurs
+                      accro et font la différence.🦾 {" / >"}
+                    </span>
+                  </motion.p>
+                </div>
               </div>
-            </div>
 
-            {/*  <div className="absolute bottom-0 border-4 rounded-full  border-blue-400 w-80 h-80 transform -translate-y-52"></div> */}
-            {/*  <div className="order-1 md:flex justify-center items-center">
+              {/*  <div className="absolute bottom-0 border-4 rounded-full  border-blue-400 w-80 h-80 transform -translate-y-52"></div> */}
+              {/*  <div className="order-1 md:flex justify-center items-center">
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
@@ -124,21 +126,22 @@ export default function Portfolio() {
                 />
               </motion.div>
             </div> */}
-          </div>
-        </header>
-        <main className=" md:space-y-32 ">
-          <Background />
-          {/* mes Compétences  */}
-          <Skills />
+            </div>
+          </header>
+          <main className=" md:space-y-32 ">
+            <Background />
+            {/* mes Compétences  */}
+            <Skills />
 
-          {/* apropos de moi */}
-          <About />
-          {/*  nos projects  */}
-          <Projets />
+            {/* apropos de moi */}
+            <About />
+            {/*  nos projects  */}
+            <Projets />
 
-          {/*  Nos contact */}
-          <Contact />
-        </main>
+            {/*  Nos contact */}
+            <Contact />
+          </main>
+        </div>
       </div>
     </div>
   );
