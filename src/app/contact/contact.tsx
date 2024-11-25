@@ -37,11 +37,11 @@ export default function Contact() {
         </motion.h2>
       </section>
 
-      <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent) container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center md:py-12 px-2 sm:px-6 space-y-4">
-        <div className="max-w-md w-full space-y-2">
-          {/* Phone container */}
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 to-indigo-100 items-center justify-center md:py-12 md:px-2 sm:px-6 space-y-4">
+        {/* <div className="max-w-md w-full space-y-2">
+      
           <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden ">
-            {/* Phone screen */}
+    
             <div className="absolute top-[14px] left-[14px] right-[14px] bottom-[14px] bg-white rounded-[46px] overflow-y-auto ">
               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 shadow-sm  pb-8 py-12 ">
                 Email Us
@@ -143,10 +143,10 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*  champs à droite  */}
-        <div className="p-4 md:p-6 r shadow-[#3E2ABF] shadow-lg  rounded-lg">
+        <div className="container p-4 md:p-6 shadow-[#4a4379] shadow-sm border-2 border-[#3E2ABF] rounded-lg">
           <h3 className="text-xl font-semibold mb-4">Informations</h3>
           <p className="mb-2">
             <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
@@ -157,7 +157,7 @@ export default function Contact() {
           </p>
 
           <h4 className="text-lg font-semibold mb-2 mt-6 ">follow me </h4>
-          <div className="flex space-x-4">
+          <div className="flex md:space-x-4">
             <div className="relative z-10 flex  space-x-6">
               <motion.a
                 href="https://github.com/sancty007/"
