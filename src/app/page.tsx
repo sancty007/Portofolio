@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Projets from "./_my-projects/page";
 
 import Skills from "./_skills/page";
 import About from "./about/about";
@@ -9,9 +8,10 @@ import Contact from "./contact/contact";
 /* import Nav from "@/components/nav"; */
 import Image from "next/image";
 import Background from "@/components/ui/background";
-import Nav from "@/components/nav";
-import SpotlightComponent from "@/components/new";
+
 import Presentation from "@/components/presentation";
+import SpotlightComponent from "@/components/SpotlightComponents";
+import Projects from "./_my-projects/page";
 
 const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
@@ -79,7 +79,7 @@ export default function Portfolio() {
                   transition={{ duration: 0.5 }}
                   className="text-2xl  md:text-3xl font-bold mb-2"
                 >
-                  <span className="text-[#3E2ABF]">👋 {"I'"}m </span>
+                  <span className="text-[#3E2ABF]">👋 {"I'"}m</span>
                   Sanctifier Yaw-Mensah
                 </motion.h1>
                 <motion.p
@@ -120,7 +120,7 @@ export default function Portfolio() {
             {/* apropos de moi */}
             <About />
             {/*  nos projects  */}
-            <Projets />
+            <Projects />
 
             {/*  Nos contact */}
             <Contact />
