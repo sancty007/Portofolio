@@ -12,7 +12,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
-import EmailCopier from "@/components/ui/components/ui/EmailCopier";
+//import EmailCopier from "@/components/ui/components/ui/EmailCopier";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -27,19 +27,17 @@ export default function Contact() {
   return (
     <>
       <section className="container" id="contact">
-        <div className=""></div>
         <motion.h2
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="text-3xl font-semibold mb-6 pb-8 py-12  border-b border-[#3E2ABF]"
         >
-          {" <"}Contact{" / >"}
+          {" <"}Contactez-moi{" / >"}
         </motion.h2>
-      </section>
 
-      <div className="container to-indigo-100 items-center justify-center md:py-12 md:px-2 sm:px-6 space-y-4">
-        {/* <div className="max-w-md w-full space-y-2">
+        <div className="container to-indigo-100 items-center justify-center md:py-12 md:px-2 sm:px-6 space-y-4">
+          {/* <div className="max-w-md w-full space-y-2">
       
           <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden ">
     
@@ -145,45 +143,46 @@ export default function Contact() {
             </div>
           </div>
         </div> */}
-        <div></div>
-        {/*  champs à droite  */}
-        <div className="p-4 shadow-[#4a4379] shadow-sm border-2 border-[#3E2ABF] rounded-lg md:p-6">
-          <h3 className="text-xl font-semibold mb-4">Informations</h3>
-          <p className="mb-2">
-            <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
-          </p>
-          <p className="mb-2">
-            <i className="fas fa-envelope mr-2 text-white"></i>
-            <EmailCopier email="sanctifieryawmensah55@gmail.com" />
-          </p>
 
-          <h4 className="text-lg font-semibold mb-2 mt-6 ">follow me </h4>
-          <div className="flex md:space-x-4">
-            <div className="relative z-10 flex  space-x-6">
-              <motion.a
-                href="https://github.com/sancty007/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-white bg-opacity-20 p-3 rounded-full"
-              >
-                <Github size={24} />
-              </motion.a>
-              <motion.a
-                href="https://www.linkedin.com/in/sanctifier-yaw-mensah/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-white bg-opacity-20 p-3 rounded-full"
-              >
-                <Linkedin size={24} />
-              </motion.a>
+          {/*  champs à droite  */}
+          <div className="p-4 shadow-[#4a4379] shadow-sm border-2 border-[#3E2ABF] rounded-lg md:p-6">
+            <h3 className="text-xl font-semibold mb-4">Informations</h3>
+            <p className="mb-2">
+              <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
+            </p>
+            <p className="mb-2">
+              <i className="fas fa-envelope mr-2 text-white"></i>
+              sanctifieryawmensah55@gmail.com
+            </p>
+
+            <h4 className="text-lg font-semibold mb-2 mt-6 ">Me suivre </h4>
+            <div className="flex md:space-x-4">
+              <div className="relative z-10 flex  space-x-6">
+                <motion.a
+                  href="https://github.com/sancty007/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="bg-white bg-opacity-20 p-3 rounded-full"
+                >
+                  <Github size={24} />
+                </motion.a>
+                <motion.a
+                  href="https://www.linkedin.com/in/sanctifier-yaw-mensah/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="bg-white bg-opacity-20 p-3 rounded-full"
+                >
+                  <Linkedin size={24} />
+                </motion.a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

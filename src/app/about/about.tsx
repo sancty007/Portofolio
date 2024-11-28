@@ -30,7 +30,7 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="py-6 text-xl md:text-3xl font-bold inline-block"
         >
-          {"<About />"}
+          {" <"}À propos {" / >"}
         </motion.h1>
         <motion.p
           initial={{ y: -20, opacity: 0 }}
@@ -41,10 +41,12 @@ export default function About() {
           Je suis Sanctifier Yaw-Mensah, développeur full-stack passionné par la
           création d&apos;applications web performantes et intuitives. Étudiant
           en informatique, je maîtrise des technologies comme{" "}
-          <span className="bg-blue-500 px-2 ">React</span>, Django et Docker.
-          Chaque projet est pour moi l&apos;occasion de relever des défis,
-          d&apos;explorer de nouvelles technologies et de livrer des solutions
-          innovantes qui apportent une réelle valeur aux utilisateurs.
+          <span className="bg-blue-500 px-2 ">React</span>,{" "}
+          <span className="bg-green-500 px-2 ">Django</span> et{" "}
+          <span className="bg-blue-300 px-2 ">Docker</span>. Chaque projet est
+          pour moi l&apos;occasion de relever des défis, d&apos;explorer de
+          nouvelles technologies et de livrer des solutions innovantes qui
+          apportent une réelle valeur aux utilisateurs.
         </motion.p>
       </div>
     </div>

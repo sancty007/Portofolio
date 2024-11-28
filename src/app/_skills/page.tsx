@@ -1,10 +1,10 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
+
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import { technologies } from "@/data/skills";
 
-import { CircleIcon } from "lucide-react";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 /* const technologies = [
   {
@@ -58,7 +58,7 @@ export default function Skills() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl md:text-3xl font-bold inline-block "
         >
-          {"<Favorite technologies />"}
+          {"<Technos favorites />"}
         </motion.h1>
         <motion.p
           initial={{ y: -20, opacity: 0 }}
@@ -67,12 +67,31 @@ export default function Skills() {
           className=" leading-loose "
         >
           Je suis passionné par les technologies modernes 😉 qui transforment
-          des idées en solutions innovantes. Avec React et Next js , Tailwind
-          CSS et Framer Motion , je conçois des interfaces dynamiques et
-          animées. En backend, Django et me permettent de créer des systèmes
-          robustes connectés à des bases comme Oracle et MySQL. J&apos;exploite
-          Docker pour le déploiement et Git/GitHub pour une collaboration
-          fluide. Ces outils reflètent ma créativité et ma quête constante
+          des idées en solutions innovantes. Avec{" "}
+          <LinkPreview
+            url="https://fr.react.dev"
+            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
+          >
+            React
+          </LinkPreview>{" "}
+          et Next js ,{" "}
+          <LinkPreview
+            url="https://tailwindcss.com/"
+            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
+          >
+            Tailwind CSS
+          </LinkPreview>{" "}
+          et Framer Motion , je conçois des interfaces dynamiques et animées. En
+          backend, Django et me permettent de créer des systèmes robustes
+          connectés à des bases comme Oracle et MySQL. J&apos;exploite{" "}
+          <LinkPreview
+            url="https://www.docker.com/"
+            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
+          >
+            Docker
+          </LinkPreview>{" "}
+          pour le déploiement et Git/GitHub pour une collaboration fluide. Ces
+          outils reflètent ma créativité et ma quête constante
           d&apos;excellence. 🪄. Voici une liste de technologies avec lesquelles
           j&apos;ai travaillé
         </motion.p>

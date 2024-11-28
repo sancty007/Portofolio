@@ -4,6 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'api.microlink.io',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'i.pinimg.com',
         pathname: '/564x/**',
       },

@@ -79,7 +79,7 @@ export default function Portfolio() {
                   transition={{ duration: 0.5 }}
                   className="text-2xl  md:text-3xl font-bold mb-2"
                 >
-                  <span className="text-[#3E2ABF]">👋 {"I'"}m</span>
+                  <span className="text-[#3E2ABF]">👋 {"I'"}m </span>
                   Sanctifier Yaw-Mensah
                 </motion.h1>
                 <motion.p
