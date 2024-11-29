@@ -31,131 +31,21 @@ export default function Contact() {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-semibold mb-6 pb-8 py-12  border-b border-[#3E2ABF]"
+          className="text-3xl font-semibold mb-6 pb-8 py-12  border-b-2 border-[#3E2ABF]"
         >
-          {" <"}Contactez-moi{" / >"}
+          {" <"}Contact{" / >"}
         </motion.h2>
 
         <div className="container to-indigo-100 items-center justify-center md:py-12 md:px-2 sm:px-6 space-y-4">
-          {/* <div className="max-w-md w-full space-y-2">
-      
-          <div className="relative mx-auto bg-black rounded-[60px] h-[712px] w-[350px] shadow-md overflow-hidden ">
-    
-            <div className="absolute top-[14px] left-[14px] right-[14px] bottom-[14px] bg-white rounded-[46px] overflow-y-auto ">
-              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 shadow-sm  pb-8 py-12 ">
-                Email Us
-              </h2>
-
-              <div className="px-6 py-8 ">
-                {isSubmitted ? (
-                  <div className="text-center ">
-                    <FontAwesomeIcon
-                      icon={faPaperPlane}
-                      className="text-4xl mb-4"
-                    />
-                    <p className="text-xl font-semibold">
-                      Message envoyé avec succès!
-                    </p>
-                    <p className="mt-2">
-                      Nous vous répondrons dans les plus brefs délais.
-                    </p>
-                  </div>
-                ) : (
-                  <form
-                    onSubmit={handleSubmit}
-                    className="space-y-4 text-black "
-                  >
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        placeholder="  john Doe fabric"
-                        className="mt-1 block w-full shadow-blue-300 rounded-md shadow-sm  sm:text-sm py-4 "
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="  johndoe@gmail.com"
-                        required
-                        className="mt-1 block w-full shadow-blue-300 rounded-md shadow-sm  sm:text-sm py-4"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="subject"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Subject
-                      </label>
-                      <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="  my subject"
-                        required
-                        className="mt-1 block w-full shadow-blue-300 rounded-md shadow-sm  sm:text-sm py-4 "
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        required
-                        placeholder=" my message "
-                        className="mt-1 block w-full shadow-blue-300 rounded-md shadow-sm focus:ring-mosala_vert  sm:text-sm"
-                      ></textarea>
-                    </div>
-                    <div>
-                      <button
-                        type="submit"
-                        className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium bg-[#3E2ABF] text-white hover:text-white shadow-blue-300 focus:outline-none "
-                      >
-                        send
-                      </button>
-                    </div>
-                  </form>
-                )}
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-          {/*  champs à droite  */}
+          {/*  fields on the right  */}
           <div className="p-4 shadow-[#4a4379] shadow-sm border-2 border-[#3E2ABF] rounded-lg md:p-6">
-            <h3 className="text-xl font-semibold mb-4">Informations</h3>
-            <p className="mb-2">
+            <h3 className="text-xl font-semibold mb-4">Information</h3>
+            {/*  <p className="mb-2">
               <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
-            </p>
-            <p className="mb-2">
-              <i className="fas fa-envelope mr-2 text-white"></i>
-              sanctifieryawmensah55@gmail.com
-            </p>
+            </p> */}
+            <p className="mb-2">sanctifieryawmensah55@gmail.com</p>
 
-            <h4 className="text-lg font-semibold mb-2 mt-6 ">Me suivre </h4>
+            <h4 className="text-lg font-semibold mb-2 mt-6 ">Follow Me </h4>
             <div className="flex md:space-x-4">
               <div className="relative z-10 flex  space-x-6">
                 <motion.a

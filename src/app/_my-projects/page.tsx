@@ -8,16 +8,16 @@ export default function ProjectsPage() {
   return (
     <div className="container py-20" id="projects">
       <h1 className="text-3xl font-semibold mb-6 md:pb-8 md:py-12  border-b border-[#3E2ABF]">
-        {"<"}Quelques projets récents{"/>"}
+        {"<"}Recent Projects{"/>"}
       </h1>
-      <div className=" group grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8 p-4">
+      <div className=" group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4   items-center justify-center gap-2 p-4">
         {projects.map((project) => (
           <LinkPreview
             key={project.id}
             url={project.link}
             className="relative z-10 font-bold "
           >
-            <div className="w-full sm:w-96 rounded-lg overflow-hidden border-2 border-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
+            <div className="w-full sm:w-96 rounded-lg overflow-hidden border-2 border-[#3E2ABF]/100">
               <div className="relative w-full h-48 overflow-hidden p-2">
                 <Image
                   src={project.img}
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
                   {project.des}
                 </p>
                 <Button className="inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
-                  Accéder au projet
+                  open project
                 </Button>
               </div>
             </div>

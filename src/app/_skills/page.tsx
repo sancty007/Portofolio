@@ -48,7 +48,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 export default function Skills() {
   return (
     <div
-      className="relative z-10 py-12 container grid grid-cols-1 md:grid-cols-2 justify-center items-center md:gap-20 md:py-24"
+      className="relative z-10 py-12 container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center items-center md:gap-20 md:py-24"
       id="about"
     >
       <div className="space-y-4">
@@ -58,7 +58,7 @@ export default function Skills() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl md:text-3xl font-bold inline-block "
         >
-          {"<Technos favorites />"}
+          {"<Technologies />"}
         </motion.h1>
         <motion.p
           initial={{ y: -20, opacity: 0 }}
@@ -66,34 +66,40 @@ export default function Skills() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className=" leading-loose "
         >
-          Je suis passionné par les technologies modernes 😉 qui transforment
-          des idées en solutions innovantes. Avec{" "}
+          I am passionate about modern technologies 😉 that transform ideas into
+          innovative solutions. With{" "}
           <LinkPreview
             url="https://fr.react.dev"
             className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
           >
             React
           </LinkPreview>{" "}
-          et Next js ,{" "}
+          and Next.js,{" "}
           <LinkPreview
             url="https://tailwindcss.com/"
             className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
           >
             Tailwind CSS
           </LinkPreview>{" "}
-          et Framer Motion , je conçois des interfaces dynamiques et animées. En
-          backend, Django et me permettent de créer des systèmes robustes
-          connectés à des bases comme Oracle et MySQL. J&apos;exploite{" "}
+          and Framer Motion, I design dynamic and animated interfaces. In the
+          backend, Django allows me to create robust systems connected to
+          databases like Oracle and MySQL. I use{" "}
           <LinkPreview
             url="https://www.docker.com/"
             className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
           >
             Docker
           </LinkPreview>{" "}
-          pour le déploiement et Git/GitHub pour une collaboration fluide. Ces
-          outils reflètent ma créativité et ma quête constante
-          d&apos;excellence. 🪄. Voici une liste de technologies avec lesquelles
-          j&apos;ai travaillé
+          for deployment and{" "}
+          <LinkPreview
+            url="https://github.com/"
+            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
+          >
+            Git/GitHub
+          </LinkPreview>{" "}
+          for smooth collaboration. These tools reflect my creativity and my
+          constant quest for excellence 🪄. Here is a list of technologies I
+          have worked with
         </motion.p>
       </div>
 
@@ -104,7 +110,7 @@ export default function Skills() {
         className="md:gap-20  "
       >
         <div className="rounded-lg">
-          <div className="grid grid-cols-2 md:gap-4 md:grid-cols-2 lg:grid-cols-3 overflow-hidden">
+          <div className="grid grid-cols-2 md:gap-4 md:grid-cols-3 lg:grid-cols-3 overflow-hidden">
             {technologies.map((tech) => (
               <div
                 key={tech.name}
@@ -119,8 +125,6 @@ export default function Skills() {
           </div>
         </div>
       </motion.div>
-      {/* 
-border-[#FFFF9C] rounded-tl-2xl rounded-br-2xl border-4  */}
     </div>
   );
 }

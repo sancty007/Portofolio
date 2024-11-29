@@ -13,23 +13,23 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "INCUBATION",
-    des: "Insertion et accompagnement des étudiants dans le monde professionnel",
+    des: "Insertion and support of students in the professional world",
     link: "https://incubateur-umng.site/",
     img: "/images/univer.png",
     /* iconLists: ["/icons/icon1.png", "/icons/icon2.png"], */
   },
   {
     id: 2,
-    title: "TO yekola na Bomoko",
-    des: "La plateforme offre des compétences pratiques et prépare les utilisateurs aux défis du marché du travail.",
+    title: "TO Yekola na Bomoko",
+    des: "The platform offers practical skills and prepares users for the challenges of the job market.",
     link: "https://yeekola.vercel.app/",
     img: "/images/yekola.png",
     /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
   },
   {
     id: 3,
-    title: "Projet Mosala",
-    des: "Construisons ensemble l'avenir professionnel des jeunes congolais.",
+    title: "Mosala Project",
+    des: "Let's build together the professional future of young Congolese.",
     link: "https://projet-mossala-3mh5.vercel.app",
     img: "/images/mosala.png",
     /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */

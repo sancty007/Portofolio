@@ -4,6 +4,7 @@ import "./globals.css";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
 import Nav from "@/components/nav";
 import { cn } from "@/lib/utils";
+import NavMobil from "@/components/navMobil";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,11 @@ export default function RootLayout({
         <header>
           <Nav />
         </header>
-        <main>{children}</main>
+
+        <main>
+          <NavMobil />
+          {children}
+        </main>
       </body>
       <ScrollToTopButton />
     </html>
