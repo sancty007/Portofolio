@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div
-      className="relative z-10 container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-20 lg:py-24 mt-4"
+      className="relative z-10 container grid grid-cols-1 space-y-4 md:grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-20 lg:py-24 lg:mt-4"
       id="about"
     >
       <motion.div
@@ -38,24 +38,13 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className=" leading-loose "
         >
-          🫡 Hi! I am a passionate computer science student and currently a
-          finalist in my computer science degree. My particular interest in
-          programming and cybersecurity has allowed me to develop a versatile
-          expertise, ranging from software development to system administration,
-          including database management and cybersecurity. Curious and
-          motivated, I constantly challenge myself to learn and master new
-          technologies to solve complex problems and innovate. I aspire to
-          contribute to exciting projects, collaborate with dynamic teams, and
-          continue to evolve in this ever-changing field.
-          {/*  Je suis Sanctifier Yaw-Mensah, développeur full-stack passionné par la
-          création d&apos;applications web performantes et intuitives. Étudiant
-          en informatique, je maîtrise des technologies comme{" "}
-          <span className="underline decoration-blue-500 px-2 ">React</span>,{" "}
-          <span className="underline decoration-green-600 px-2 ">Django</span>{" "}
-          et <span className="underline decoration-blue-400 px-2 ">Docker</span>
-          . Chaque projet est pour moi l&apos;occasion de relever des défis,
-          d&apos;explorer de nouvelles technologies et de livrer des solutions
-          innovantes qui apportent une réelle valeur aux utilisateurs. */}
+          🫡 I&apos;m a computer science student with a passion for programming
+          and cybersecurity. I&apos;ve developed a broad skill set, from
+          software development to system administration, database management,
+          and cybersecurity. I strive to learn new technologies, solve complex
+          problems, and innovate. My goal is to work on exciting projects,
+          collaborate with dynamic teams, and stay ahead in this rapidly
+          evolving field.
         </motion.p>
       </div>
     </div>

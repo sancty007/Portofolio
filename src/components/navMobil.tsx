@@ -5,13 +5,13 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 export default function NavMobil() {
   return (
-    <div className="relative">
+    <div className="">
       <Sheet>
-        <SheetTrigger className="z-50 relative text-white md:hidden p-6 top-0 right-0">
+        <SheetTrigger className="z-50  text-white md:hidden p-6 top-0 right-0 space-y-8">
           <SlMenu />
         </SheetTrigger>
-        <SheetContent side="bottom">
-          <div className="space-x-4">
+        <SheetContent side="right" className="">
+          <div className="flex flex-col space-y-8">
             {Object.entries(navSection).map(([path, label]) => (
               <Link key={path} href={path} className="">
                 {label}

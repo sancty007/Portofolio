@@ -6,18 +6,18 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function ProjectsPage() {
   return (
-    <div className="container py-20" id="projects">
-      <h1 className="text-3xl font-semibold mb-6 md:pb-8 md:py-12  border-b border-[#3E2ABF]">
+    <div className="container" id="projects">
+      <h1 className="text-3xl font-semibold lg:mb-6 md:pb-8 md:py-12">
         {"<"}Recent Projects{"/>"}
       </h1>
-      <div className=" group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4   items-center justify-center gap-2 p-4">
+      <div className=" group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 items-center justify-center gap-4 p-4">
         {projects.map((project) => (
           <LinkPreview
             key={project.id}
             url={project.link}
             className="relative z-10 font-bold "
           >
-            <div className="w-full sm:w-96 rounded-lg overflow-hidden border-2 border-[#3E2ABF]/100">
+            <div className="w-full  rounded-lg overflow-hidden border-2 border-[#3E2ABF]/100">
               <div className="relative w-full h-48 overflow-hidden p-2">
                 <Image
                   src={project.img}

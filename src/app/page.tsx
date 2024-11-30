@@ -21,11 +21,11 @@ export default function Portfolio() {
   return (
     <div className="bg-slate-950 ">
       <SpotlightComponent />
-      <div className="py-20 relative h-full w-full text-white lg:py-40 ">
+      <div className="py-20 relative text-white lg:py-40 ">
         {/*  header  */}
 
         <div className="">
-          <header className="container space-y-4 ">
+          <header className="space-y-4 mb-8">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -40,13 +40,13 @@ export default function Portfolio() {
                 className="rounded-full w-52 h-52 object-cover "
               />
             </motion.div>
-            <div className="flex flex-col md:flex-row justify-center items-center">
+            <div className="container flex flex-col md:flex-row justify-center items-center">
               <div className="order-2 md:order-1 md:text-center md:tracking-wide space-y-8">
                 <motion.h1
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="text-2xl  md:text-3xl font-bold mb-2"
+                  className="lg:text-3xl font-bold mb-2"
                 >
                   <span className="text-[#3E2ABF]">👋 {"I'"}m </span>
                   Sanctifier Yaw-Mensah
@@ -55,15 +55,15 @@ export default function Portfolio() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="text-xl  md:text-2xl md:mb-4 font-bold"
+                  className="  lg:text-2xl md:mb-4 font-bold"
                 >
-                  Full-Stack Developer with a Front-End Focus
+                  Full-Stack Developer
                 </motion.p>
                 <Presentation />
               </div>
             </div>
           </header>
-          <main className=" md:space-y-32 ">
+          <main className=" md:space-y-12 ">
             <Background />
 
             {/* apropos de moi */}

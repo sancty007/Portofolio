@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { LinkPreview } from "./ui/link-preview";
 
 export default function presentation() {
   return (
@@ -11,11 +10,9 @@ export default function presentation() {
         className=" md:text-gray-300 "
       >
         <span className="font-bold ">What if your applications became as </span>
-        <span className="text-primary font-bold">
-          indispensable as your smartphone? 🥳
-        </span>
+        <span className="font-bold">indispensable as your smartphone? 🥳</span>
         Passionate about creating innovative web applications, I design{" "}
-        <span className="text-primary font-bold">
+        <span className="font-bold">
           custom solutions with modern technologies
         </span>{" "}
         to provide exceptional user experiences.{" "}

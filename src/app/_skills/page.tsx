@@ -48,7 +48,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 export default function Skills() {
   return (
     <div
-      className="relative z-10 py-12 container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center items-center md:gap-20 md:py-24"
+      className="relative z-10 py-12 container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center items-center md:gap-20 md:py-24 space-y-8"
       id="about"
     >
       <div className="space-y-4">
@@ -66,40 +66,30 @@ export default function Skills() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className=" leading-loose "
         >
-          I am passionate about modern technologies 😉 that transform ideas into
-          innovative solutions. With{" "}
+          I&apos;m passionate about modern technologies 😉 that transform ideas
+          into innovative solutions. I use{" "}
           <LinkPreview
             url="https://fr.react.dev"
             className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
           >
             React
-          </LinkPreview>{" "}
-          and Next.js,{" "}
+          </LinkPreview>
+          ,{" "}
           <LinkPreview
             url="https://tailwindcss.com/"
             className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
           >
             Tailwind CSS
-          </LinkPreview>{" "}
-          and Framer Motion, I design dynamic and animated interfaces. In the
-          backend, Django allows me to create robust systems connected to
-          databases like Oracle and MySQL. I use{" "}
+          </LinkPreview>
+          , Django, and{" "}
           <LinkPreview
             url="https://www.docker.com/"
             className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
           >
             Docker
           </LinkPreview>{" "}
-          for deployment and{" "}
-          <LinkPreview
-            url="https://github.com/"
-            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
-          >
-            Git/GitHub
-          </LinkPreview>{" "}
-          for smooth collaboration. These tools reflect my creativity and my
-          constant quest for excellence 🪄. Here is a list of technologies I
-          have worked with
+          for dynamic interfaces, robust systems, and smooth collaboration. Here
+          is a list of technologies I have worked with
         </motion.p>
       </div>
 
