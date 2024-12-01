@@ -27,6 +27,8 @@
     "framer-motion": "^11.5.4",
     "icons-react": "^3.7.1",
     "lucide-react": "^0.436.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.5",
     "next": "14.2.7",
     "qss": "^3.0.0",
     "react": "^18",
@@ -36,6 +38,7 @@
     "react-remove-scroll": "^2.5.10",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
+    "ts-node": "^10.9.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -46,6 +49,6 @@
     "eslint-config-next": "14.2.7",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5.5.4"
   }
 }

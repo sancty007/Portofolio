@@ -1,13 +1,16 @@
+"use client";
+
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { SlMenu } from "react-icons/sl";
 import { navSection } from "@/data/navData";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import handleDownload from "@/pages/api/route";
 export default function NavMobil() {
   return (
     <div className="">
       <Sheet>
-        <SheetTrigger className="z-50  text-white md:hidden p-6 top-0 right-0 space-y-8">
+        <SheetTrigger className="z-50 text-white md:hidden p-6 top-0 right-0 space-y-8">
           <SlMenu />
         </SheetTrigger>
         <SheetContent side="right" className="">
@@ -17,7 +20,12 @@ export default function NavMobil() {
                 {label}
               </Link>
             ))}
-            <Button className="">Download cv</Button>
+            <Button
+              className="md:px-6 hover:text-[#f3f3de] bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF] uppercase hover:shadow-[#9687f7]"
+              onClick={handleDownload}
+            >
+              Download cv
+            </Button>
           </div>
         </SheetContent>
       </Sheet>

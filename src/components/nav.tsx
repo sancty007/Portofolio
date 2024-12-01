@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { navSection } from "@/data/navData";
+import handleDownload from "@/pages/api/route";
 
 export default function Nav() {
   return (
@@ -18,7 +19,10 @@ export default function Nav() {
             {label}
           </Link>
         ))}
-        <Button className="md:px-6 hover:text-[#f3f3de] bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF] uppercase">
+        <Button
+          className="md:px-6 hover:text-[#f3f3de] bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF] uppercase"
+          onClick={handleDownload}
+        >
           Download cv
         </Button>
       </div>

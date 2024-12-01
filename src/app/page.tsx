@@ -55,7 +55,7 @@ export default function Portfolio() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="  lg:text-2xl md:mb-4 font-bold"
+                  className="text-xl lg:text-2xl md:mb-4 font-bold"
                 >
                   Full-Stack Developer
                 </motion.p>
