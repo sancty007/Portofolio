@@ -1,9 +1,24 @@
-import db from '../../lib/db';
+
 
 
 
 export default async function Download(req :any, res :any) {
-    if (req.method === 'GET') {
+
+        if (req.method === 'GET') {
+            try {
+                // Redirige directement vers le fichier statique
+                res.writeHead(302, {
+                    Location: '/cv.pdf',
+                });
+                res.end();
+            } catch (err) {
+                console.error(err);
+                res.status(500).json({ message: 'Erreur lors du téléchargement.' });
+            }
+        } else {
+            res.status(405).json({ message: 'Méthode non autorisée' });
+        }
+  /*   if (req.method === 'GET') {
         try {
 
             // Vérifier et mettre à jour les statistiques dans la base de données
@@ -44,5 +59,5 @@ export default async function Download(req :any, res :any) {
         }
     }else{
         res.status(405).json({ message: 'Méthode non autorisée' });
-    }
+    } */
 }
