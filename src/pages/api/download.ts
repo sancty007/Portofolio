@@ -1,10 +1,7 @@
 import db from '../../lib/db';
 
-/* 
-type DownloadRow ={
-    file_name: string;
-    download_count: number;
-} */
+
+
 export default async function Download(req :any, res :any) {
     if (req.method === 'GET') {
         try {
