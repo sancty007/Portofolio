@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function presentation() {
   return (
-    <div className="flex justify-center lg:px-40 leading-loose">
+    <div className="flex justify-center leading-relaxed lg:px-40 md:leading-loose">
       <motion.p
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

@@ -13,7 +13,7 @@ import Presentation from "@/components/presentation";
 import SpotlightComponent from "@/components/SpotlightComponents";
 import Projects from "./_my-projects/page";
 
-const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
+// const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
 export default function Portfolio() {
   new Promise((resolve) => setTimeout(resolve, 2000));
@@ -37,7 +37,7 @@ export default function Portfolio() {
                 width={500}
                 height={500}
                 alt="Picture of the author"
-                className="rounded-full w-52 h-52 object-cover "
+                className="rounded-full w-52 h-52 object-cover border-2 border-[#3E2ABF]"
               />
             </motion.div>
             <div className="container flex flex-col md:flex-row justify-center items-center">

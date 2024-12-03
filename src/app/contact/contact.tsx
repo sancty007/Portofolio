@@ -47,14 +47,14 @@ export default function Contact() {
 
             <h4 className="text-lg font-semibold mb-2 mt-6 ">Follow Me </h4>
             <div className="flex md:space-x-4">
-              <div className="relative z-10 flex  space-x-6">
+              <div className="relative z-10 flex  space-x-6 ">
                 <motion.a
                   href="https://github.com/sancty007/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="bg-white bg-opacity-20 p-3 rounded-full"
+                  className="bg-white bg-opacity-20 p-3 rounded-full border-2 border-[#3E2ABF]"
                 >
                   <Github size={24} />
                 </motion.a>
@@ -64,7 +64,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="bg-white bg-opacity-20 p-3 rounded-full"
+                  className="bg-white bg-opacity-20 p-3 rounded-full border-2 border-[#3E2ABF]"
                 >
                   <Linkedin size={24} />
                 </motion.a>

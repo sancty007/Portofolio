@@ -36,7 +36,7 @@ export default function About() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className=" leading-loose "
+          className=" leading-relaxed  md:leading-loose "
         >
           🫡 I&apos;m a computer science student with a passion for programming
           and cybersecurity. I&apos;ve developed a broad skill set, from

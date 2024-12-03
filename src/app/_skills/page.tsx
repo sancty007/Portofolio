@@ -64,7 +64,7 @@ export default function Skills() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className=" leading-loose "
+          className="  leading-relaxed md:leading-loose "
         >
           I&apos;m passionate about modern technologies 😉 that transform ideas
           into innovative solutions. I use{" "}
