@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import Skills from "./_skills/page";
-import About from "./about/about";
+import About from "./_about/about";
 import Contact from "./contact/contact";
 /* import Nav from "@/components/nav"; */
 import Image from "next/image";
@@ -12,6 +12,7 @@ import Background from "@/components/ui/background";
 import Presentation from "@/components/presentation";
 import SpotlightComponent from "@/components/SpotlightComponents";
 import Projects from "./_my-projects/page";
+import GitHubStats from "./_GitHubStats/page";
 
 // const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
@@ -70,6 +71,9 @@ export default function Portfolio() {
             <About />
             {/* mes Compétences  */}
             <Skills />
+
+            {/* Mes Statistiques GitHub */}
+            <GitHubStats />
             {/*  nos projects  */}
             <Projects />
 

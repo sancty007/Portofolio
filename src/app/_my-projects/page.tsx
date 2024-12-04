@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             url={project.link}
             className="relative z-10 font-bold "
           >
-            <div className="w-full  rounded-lg overflow-hidden border-2 border-[#3E2ABF]">
+            <div className="w-full rounded-lg overflow-hidden border-2 border-[#3E2ABF]">
               <div className="relative w-full h-48 overflow-hidden p-2">
                 <Image
                   src={project.img}
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
                   {project.des}
                 </p>
                 <Button className="inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
-                  open project
+                  {project.gitHub ? "Preview" : "View on GitHub"}
                 </Button>
               </div>
             </div>

@@ -5,6 +5,7 @@ type Project = {
   des: string; // Description du projet
   link: string; // URL du projet
   img: string; // Lien de l'image de couverture
+  gitHub: boolean; // Indicateur de présence sur GitHub
   /*  iconLists: string[]; // Liste des icônes associées au projet (URLs des icônes) */
 };
 
@@ -16,6 +17,7 @@ export const projects: Project[] = [
     des: "Insertion and support of students in the professional world",
     link: "https://incubateur-umng.site/",
     img: "/images/univer.png",
+    gitHub: true,
     /* iconLists: ["/icons/icon1.png", "/icons/icon2.png"], */
   },
   {
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     des: "The platform offers practical skills and prepares users for the challenges of the job market.",
     link: "https://yeekola.vercel.app/",
     img: "/images/yekola.png",
+    gitHub: true,
     /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
   },
   {
@@ -32,6 +35,25 @@ export const projects: Project[] = [
     des: "Let's build together the professional future of young Congolese.",
     link: "https://projet-mossala-3mh5.vercel.app",
     img: "/images/mosala.png",
+    gitHub: true,
+    /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
+  },
+  {
+    id: 4,
+    title: "Mosala Project",
+    des: "Let's build together the professional future of young Congolese.",
+    link: "https://projet-mossala-3mh5.vercel.app",
+    img: "/images/mosala.png",
+    gitHub: false,
+    /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
+  },
+  {
+    id: 5,
+    title: "Mosala Project",
+    des: "Let's build together the professional future of young Congolese.",
+    link: "https://projet-mossala-3mh5.vercel.app",
+    img: "/images/mosala.png",
+    gitHub: false,
     /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
   },
 ];
