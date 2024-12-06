@@ -9,7 +9,7 @@ import handleDownload from "@/pages/api/route";
 export default function Nav() {
   return (
     <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 hidden md:flex">
-      <div className="p-2 gap-2 md:gap-2 flex md:space-x-4 md:flex items-center md:p-4 bg-slate-950/70 bg-opacity-60 backdrop-blur-lg shadow-sm drop-shadow-lg border-2 border-[#3E2ABF] rounded-md text-sm">
+      <div className="p-2 gap-2 md:gap-2 flex md:space-x-4 md:flex items-center md:p-4 bg-slate-950/70 bg-opacity-60 backdrop-blur-lg shadow-sm drop-shadow-lg border border-[#3E2ABF] rounded-md text-sm">
         {Object.entries(navSection).map(([path, label]) => (
           <Link
             key={path}

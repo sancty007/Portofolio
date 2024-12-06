@@ -23,12 +23,14 @@ export default function GitHubStats() {
             alt="GitHub Stats"
             width={495}
             height={195}
+            className="border border-[#3E2ABF] rounded-lg"
           />
           <img
             src="https://github-readme-streak-stats.herokuapp.com/?user=sancty007&theme=radical&background=1e293b&hide_border=true&ring=3E2ABF&fire=3E2ABF&currStreakLabel=3E2ABF"
             alt="GitHub Streak"
             width={495}
             height={195}
+            className="border border-[#3E2ABF] rounded-lg"
           />
         </div>
         <div>
@@ -37,6 +39,7 @@ export default function GitHubStats() {
             alt="Top Languages"
             width={495}
             height={195}
+            className="border border-[#3E2ABF] rounded-lg"
           />
         </div>
       </motion.div>

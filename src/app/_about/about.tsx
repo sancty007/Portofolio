@@ -17,7 +17,7 @@ export default function About() {
           src="/images/about_me2.jpg"
           width={300}
           height={300}
-          className="w-full h-full object-cover rounded-lg "
+          className="w-full h-full object-cover rounded-lg border border-[#3E2ABF] "
           alt="about sanctifier yaw-mensah"
         />
       </motion.div>
@@ -28,7 +28,7 @@ export default function About() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="py-4 text-xl lg:text-3xl font-bold inline-block"
+          className="py-4 text-xl lg:text-3xl font-bold inline-block "
         >
           {" <"}About{" / >"}
         </motion.h1>

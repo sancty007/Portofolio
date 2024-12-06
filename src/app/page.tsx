@@ -38,7 +38,7 @@ export default function Portfolio() {
                 width={500}
                 height={500}
                 alt="Picture of the author"
-                className="rounded-full w-52 h-52 object-cover border-2 border-[#3E2ABF]"
+                className="rounded-full w-52 h-52 object-cover border border-[#3E2ABF]"
               />
             </motion.div>
             <div className="container flex flex-col md:flex-row justify-center items-center">

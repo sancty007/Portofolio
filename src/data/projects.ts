@@ -40,19 +40,19 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Mosala Project",
-    des: "Let's build together the professional future of young Congolese.",
-    link: "https://projet-mossala-3mh5.vercel.app",
-    img: "/images/mosala.png",
+    title: "football tournament",
+    des: "Intuitive football tournament management platform for easy organization and management.",
+    link: "https://github.com/sancty007/tournoit-football.git",
+    img: "/images/tournoit_foot.png",
     gitHub: false,
     /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
   },
   {
     id: 5,
-    title: "Mosala Project",
-    des: "Let's build together the professional future of young Congolese.",
-    link: "https://projet-mossala-3mh5.vercel.app",
-    img: "/images/mosala.png",
+    title: "PossaCode Dev Day 2024",
+    des: "The largest gathering of developers for developers in Congo Brazzaville.",
+    link: "https://github.com/sancty007/PossaCodeDevDay.git",
+    img: "/images/possaCode.png",
     gitHub: false,
     /* iconLists: ["/icons/icon3.png", "/icons/icon4.png"], */
   },

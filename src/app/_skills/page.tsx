@@ -106,7 +106,7 @@ export default function Skills() {
                 key={tech.name}
                 className="flex items-center gap-3 rounded-lg p-4 text-white"
               >
-                <div className="bg-zinc-800 rounded-full p-2 border-2 border-[#3E2ABF]">
+                <div className="bg-zinc-800 rounded-full p-2 border border-[#3E2ABF]">
                   <tech.icon className="h-5 w-5 text-white " />
                 </div>
                 <span className="text-lg">{tech.name}</span>
