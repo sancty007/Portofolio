@@ -45,7 +45,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
   },
 ];
  */
-export default function Skills() {
+export default function Technologies() {
   return (
     <div
       className="relative z-10 py-12 container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center items-center md:gap-20 md:py-24 space-y-8"

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import Skills from "./_skills/page";
+import Skills from "./skills/skills";
 import About from "./_about/about";
 import Contact from "./contact/contact";
 /* import Nav from "@/components/nav"; */
@@ -13,6 +13,8 @@ import Presentation from "@/components/presentation";
 import SpotlightComponent from "@/components/SpotlightComponents";
 import Projects from "./_my-projects/page";
 import GitHubStats from "./_GitHubStats/page";
+import { Code2 } from "lucide-react";
+import Technologies from "./_technology/page";
 
 // const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
@@ -40,6 +42,9 @@ export default function Portfolio() {
                 alt="Picture of the author"
                 className="rounded-full w-52 h-52 object-cover border border-[#3E2ABF]"
               />
+              <div className="absolute -bottom-2 ml-28 bg-gradient-to-r from-purple-500 to-blue-500 p-2 rounded-full">
+                <Code2 className="w-5 h-5 text-white" />
+              </div>
             </motion.div>
             <div className="container flex flex-col md:flex-row justify-center items-center">
               <div className="order-2 md:order-1 md:text-center md:tracking-wide space-y-8">
@@ -56,7 +61,7 @@ export default function Portfolio() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="text-xl lg:text-2xl md:mb-4 font-bold"
+                  className="text-2xl md:text-3xl text-gray-400 md:mb-4 font-bold"
                 >
                   Full-Stack Developer
                 </motion.p>
@@ -68,9 +73,10 @@ export default function Portfolio() {
             <Background />
 
             {/* apropos de moi */}
+            <Skills />
             <About />
             {/* mes Compétences  */}
-            <Skills />
+            <Technologies />
 
             {/* Mes Statistiques GitHub */}
             <GitHubStats />
