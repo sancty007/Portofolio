@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 
 import { motion } from "framer-motion";
 
@@ -15,7 +14,7 @@ export default function GitHubStats() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center gap-8  p-8  rounded-lg"
+        className="flex flex-col items-center gap-8 p-8 rounded-lg"
       >
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <img
@@ -23,14 +22,14 @@ export default function GitHubStats() {
             alt="GitHub Stats"
             width={495}
             height={195}
-            className="border border-[#3E2ABF] rounded-lg"
+            className="border border-[#3E2ABF]/15 rounded-lg"
           />
           <img
             src="https://github-readme-streak-stats.herokuapp.com/?user=sancty007&theme=radical&background=1e293b&hide_border=true&ring=3E2ABF&fire=3E2ABF&currStreakLabel=3E2ABF"
             alt="GitHub Streak"
             width={495}
             height={195}
-            className="border border-[#3E2ABF] rounded-lg"
+            className="border border-[#3E2ABF]/15 rounded-lg"
           />
         </div>
         <div>
@@ -39,7 +38,7 @@ export default function GitHubStats() {
             alt="Top Languages"
             width={495}
             height={195}
-            className="border border-[#3E2ABF] rounded-lg"
+            className="border border-[#3E2ABF]/15 rounded-lg"
           />
         </div>
       </motion.div>

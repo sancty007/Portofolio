@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             url={project.link}
             className="relative z-10 font-bold "
           >
-            <div className="w-full rounded-lg overflow-hidden border border-[#3E2ABF]">
+            <div className="w-full rounded-lg overflow-hidden border border-[#3E2ABF]/15">
               <div className="relative w-full h-48 overflow-hidden p-2">
                 <Image
                   src={project.img}

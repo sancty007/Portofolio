@@ -42,24 +42,24 @@ export default function skills() {
           _
         </motion.span>
       </motion.h2>
-      <div className="container mx-auto">
+      <div className="container mx-auto bg-slate-950">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 "
         >
           {Skills.map((item, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl bg-white/5 hover:bg-white/20 transition-colors"
+              className=" group p-6 rounded-lg bg-slate-950 border border-[#3E2ABF]/15 hover:bg-white/20 transition-colors z-10"
             >
-              <item.icon className="w-12 h-12 text-[#3E2ABF] mb-4" />
+              <item.icon className="w-12 h-12 group-hover:text-[#3E2ABF] mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-400">{item.description}</p>
+              <p className="text-gray-400 ">{item.description}</p>
             </div>
           ))}
         </motion.div>

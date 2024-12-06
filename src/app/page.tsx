@@ -40,10 +40,10 @@ export default function Portfolio() {
                 width={500}
                 height={500}
                 alt="Picture of the author"
-                className="rounded-full w-52 h-52 object-cover border border-[#3E2ABF]"
+                className="rounded-full w-52 h-52 object-cover border border-[#3E2ABF]/15"
               />
-              <div className="absolute -bottom-2 ml-28 bg-gradient-to-r from-purple-500 to-blue-500 p-2 rounded-full">
-                <Code2 className="w-5 h-5 text-white" />
+              <div className="absolute -bottom-2 ml-28 bg-gradient-to-r from-purple-500 to-blue-500 p-2 rounded-full border border-[#3E2ABF]/15">
+                <Code2 className="w-5 h-5 text-white " />
               </div>
             </motion.div>
             <div className="container flex flex-col md:flex-row justify-center items-center">

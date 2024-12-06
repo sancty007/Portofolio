@@ -17,7 +17,7 @@ export default function About() {
           src="/images/about_me2.jpg"
           width={300}
           height={300}
-          className="w-full h-full object-cover rounded-lg border border-[#3E2ABF] "
+          className="w-full h-full object-cover rounded-lg border border-[#3E2ABF]/15 "
           alt="about sanctifier yaw-mensah"
         />
       </motion.div>

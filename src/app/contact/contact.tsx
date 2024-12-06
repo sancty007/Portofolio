@@ -38,7 +38,7 @@ export default function Contact() {
 
         <div className="container to-indigo-100 items-center justify-center md:py-12 md:px-2 sm:px-6 space-y-4">
           {/*  fields on the right  */}
-          <div className="p-4 shadow-[#4a4379] shadow-sm border  border-[#3E2ABF] rounded-lg md:p-6 overflow-hidden ">
+          <div className="p-4 shadow-[#4a4379]/15 shadow-sm border  border-[#3E2ABF]/15 rounded-lg md:p-6 overflow-hidden ">
             <h3 className="text-xl font-semibold mb-4">Information</h3>
             {/*  <p className="mb-2">
               <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
@@ -54,7 +54,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="bg-white bg-opacity-20 p-3 rounded-full border border-[#3E2ABF]"
+                  className="bg-white bg-opacity-20 p-3 rounded-full border border-[#3E2ABF]/15"
                 >
                   <Github size={24} />
                 </motion.a>
@@ -64,7 +64,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="bg-white bg-opacity-20 p-3 rounded-full border border-[#3E2ABF]"
+                  className="bg-white bg-opacity-20 p-3 rounded-full border border-[#3E2ABF]/15"
                 >
                   <Linkedin size={24} />
                 </motion.a>
