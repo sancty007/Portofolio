@@ -3,22 +3,22 @@ import { GraduationCap, Briefcase, Code2 } from "lucide-react";
 
 const Skills = [
   {
-    icon: Code2, // Icône pour le développement (ajuster en fonction de la bibliothèque utilisée)
-    title: "Développement Web",
+    icon: Code2, // Icon for development (adjust based on the library used)
+    title: "Web Development",
     description:
-      "Conception et développement d'applications web interactives en utilisant React, Django et des technologies modernes.",
+      "Design and development of interactive web applications using React, Django, and modern technologies.",
   },
   {
-    icon: Briefcase, // Icône pour les solutions ou la gestion de projets
-    title: "Gestion de Projets",
+    icon: Briefcase, // Icon for solutions or project management
+    title: "Project Management",
     description:
-      "Capacité à organiser, planifier et livrer des projets complexes en utilisant Docker, Git/GitHub, et des méthodologies agiles.",
+      "Ability to organize, plan, and deliver complex projects using Docker, Git/GitHub, and agile methodologies.",
   },
   {
-    icon: GraduationCap, // Icône pour l'apprentissage et l'innovation
-    title: "Apprentissage Continu",
+    icon: GraduationCap, // Icon for learning and innovation
+    title: "Continuous Learning",
     description:
-      "Passionné par la technologie, j'explore constamment de nouveaux outils comme AWS, Spring Boot, et l'administration de bases de données Oracle.",
+      "Passionate about technology, I constantly explore new tools like AWS, Spring Boot, and Oracle database administration.",
   },
 ];
 
