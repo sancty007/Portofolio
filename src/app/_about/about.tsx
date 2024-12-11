@@ -27,6 +27,7 @@ export default function About() {
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
           className="py-4 text-xl lg:text-3xl font-bold inline-block "
         >
@@ -35,6 +36,8 @@ export default function About() {
         <motion.p
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
           className=" leading-relaxed  md:leading-loose "
         >
