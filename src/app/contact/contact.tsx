@@ -45,7 +45,7 @@ export default function Contact() {
             </p> */}
             <a
               href="mailto:sanctifieryawmensah55@gmail.com"
-              className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors group"
+              className="relative z-10 flex items-center gap-2 text-white hover:text-white transition-colors group"
             >
               <Mail className="h-5 w-5 group-hover:text-[#3E2ABF]" />
               <span>sanctifieryawmensah55@gmail.com</span>
