@@ -43,7 +43,13 @@ export default function Contact() {
             {/*  <p className="mb-2">
               <i className="fas fa-phone mr-2 text-white"></i>+242 068223310
             </p> */}
-            <p className="md:mb-2">sanctifieryawmensah55@gmail.com</p>
+            <a
+              href="mailto:sanctifieryawmensah55@gmail.com"
+              className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors group"
+            >
+              <Mail className="h-5 w-5 group-hover:text-[#3E2ABF]" />
+              <span>sanctifieryawmensah55@gmail.com</span>
+            </a>
 
             <h4 className="text-lg font-semibold mb-2 mt-6 ">Follow Me </h4>
             <div className="flex md:space-x-4">

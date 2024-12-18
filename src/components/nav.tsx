@@ -16,8 +16,7 @@ export default function Nav() {
           <Link
             key={path}
             href={path}
-            className="
-          text-white hover:border-b-2 hover:border-[#3E2ABF] transition-all duration-200 uppercase "
+            className="text-white hover:border-b-2 hover:border-[#3E2ABF] transition-colors duration-200 uppercase "
           >
             {label}
           </Link>
