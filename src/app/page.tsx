@@ -51,12 +51,12 @@ export default function Portfolio() {
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="sm:text-5xl lg:text-4xl font-bold mb-2"
+                className="sm:text-5xl lg:text-4xl font-bold mb-2 "
               >
                 <span className="inline-block ml-2 transform animate-wave text-4xl">
                   👋
                 </span>
-                <span className="text-[#3E2ABF] "> {"I'"}m </span>
+                <span className="text-[#3E2ABF] ">{"I'"}m </span>
                 Sanctifier Yaw-Mensah
               </motion.h1>
               <motion.p
@@ -71,8 +71,9 @@ export default function Portfolio() {
             </div>
           </div>
         </header>
+
         <main className="">
-          <Background />
+          {/*  <Background /> */}
 
           {/* apropos de moi */}
           <Skills />

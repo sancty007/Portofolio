@@ -2,7 +2,7 @@
 
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { SlMenu } from "react-icons/sl";
-import { navSection } from "@/data/navData";
+import Navigation from "@/data/navData";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import handleDownload from "@/pages/api/route";
@@ -15,11 +15,7 @@ export default function NavMobil() {
         </SheetTrigger>
         <SheetContent side="right" className="">
           <div className="flex flex-col space-y-8">
-            {Object.entries(navSection).map(([path, label]) => (
-              <Link key={path} href={path} className="">
-                {label}
-              </Link>
-            ))}
+           <Navigation />
             <Button
               className="md:px-6 hover:text-[#f3f3de] bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF] uppercase hover:shadow-[#9687f7]"
               onClick={handleDownload}
