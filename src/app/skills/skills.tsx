@@ -24,7 +24,7 @@ const Skills = [
 
 export default function skills() {
   return (
-    <section className="py-20 " id="skills">
+    <section className="relative z-10 py-20 lg:py-24 lg:mt-4" id="skills">
       <motion.h2
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

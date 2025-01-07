@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const {
   default: flattenColorPalette,
@@ -19,36 +19,32 @@ function addVariablesForColors({ addBase, theme }: any) {
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
-   
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
       screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-        '2xl': '1400px',
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1400px",
       },
     },
-    
-    extend: {
 
-      
-    
+    extend: {
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -68,19 +64,23 @@ const config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        wave: {
+          "0%": { transform: "rotate(0deg)", "transform-origin": "70% 70%" },
+          "25%": { transform: "rotate(15deg)", "transform-origin": "70% 70%" },
+          "50%": { transform: "rotate(-15deg)", "transform-origin": "70% 70%" },
+          "75%": { transform: "rotate(10deg)", "transform-origin": "70% 70%" },
+          "100%": { transform: "rotate(0deg)", "transform-origin": "70% 70%" },
+        },
       },
       animation: {
+        wave: "wave 2.5s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
-
-     
-   
-      
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
