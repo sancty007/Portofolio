@@ -24,10 +24,10 @@ export default function Portfolio() {
   return (
     <div className="bg-slate-950 ">
       <SpotlightComponent />
-      <div className="py-20 relative text-white lg:py-40 ">
+      <div className="py-20 relative text-white lg:py-24 ">
         {/*  header  */}
 
-        <header className="space-y-4 mb-8">
+        <header className="space-y-4 lg:mb-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

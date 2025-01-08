@@ -14,7 +14,7 @@ export default function GitHubStats() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center gap-8 p-8 rounded-lg"
+        className="flex flex-col items-center gap-8 py-24 rounded-lg"
       >
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <img
