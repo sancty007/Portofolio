@@ -11,10 +11,11 @@ import Background from "@/components/ui/background";
 
 import Presentation from "@/components/presentation";
 import SpotlightComponent from "@/components/SpotlightComponents";
-import Projects from "./_my-projects/page";
+
 import GitHubStats from "./_GitHubStats/page";
 import { Code2 } from "lucide-react";
 import Technologies from "./_technology/page";
+import ProjectsAcceuil from "./projects/projetAcceuil";
 
 // const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
 
@@ -22,7 +23,7 @@ export default function Portfolio() {
   new Promise((resolve) => setTimeout(resolve, 2000));
 
   return (
-    <div className="bg-slate-950 ">
+    <div className="bg-slate-950">
       <SpotlightComponent />
       <div className="py-20 relative text-white lg:py-24 ">
         {/*  header  */}
@@ -56,7 +57,9 @@ export default function Portfolio() {
                 <span className="inline-block ml-2 transform animate-wave text-4xl">
                   👋
                 </span>
-                <span className="text-[#3E2ABF] text-xl ">I&apos;m </span>
+                <span className="text-[#3E2ABF] text-xl lg:text-4xl ">
+                  I&apos;m{" "}
+                </span>
                 Sanctifier Yaw-Mensah
               </motion.h1>
               <motion.p
@@ -73,7 +76,7 @@ export default function Portfolio() {
         </header>
 
         <main className="">
-          {/*  <Background /> */}
+          <Background />
 
           {/* apropos de moi */}
           <Skills />
@@ -84,7 +87,7 @@ export default function Portfolio() {
           {/* Mes Statistiques GitHub */}
           <GitHubStats />
           {/*  nos projects  */}
-          <Projects />
+          <ProjectsAcceuil />
 
           {/*  Nos contact */}
           <Contact />

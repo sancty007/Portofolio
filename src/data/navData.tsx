@@ -25,7 +25,7 @@ export default function Navigation() {
           </a>
 
           <a
-            href="#projects"
+            href="/projects"
             className="text-white hover:text-white transition-colors"
             aria-label="Documents"
           >

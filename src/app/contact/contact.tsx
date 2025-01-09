@@ -75,21 +75,12 @@ export default function Contact() {
 
   return (
     <>
-      <section className="" id="contact">
-        {/*  <motion.h2
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold text-center text-white"
-        >
-          {" <"}Contact{" / >"}
-        </motion.h2> */}
-
-        <div className="container flex to-indigo-100 items-center justify-center md:px-2 sm:px-6 ">
+      <section className="relative z-10" id="contact">
+        <div className="bg-gradient-to-t  from-[#3E2ABF] via-bg-slate-9 to-transparent z-10 flex items-center justify-center md:px-2 sm:px-6  ">
           {/*  fields on the right  */}
 
-          <div className=" p-4 shadow-[#4a4379]/15 shadow-sm rounded-lg md:p-6 overflow-hidden  max-w-2xl mx-auto space-y-4">
-            <h1 className="text-xl md:text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#3E2ABF] to-white">
+          <div className=" p-4 shadow-[#4a4379]/15 md:p-6 overflow-hidden  max-w-2xl mx-auto space-y-4">
+            <h1 className="text-xl md:text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#3E2ABF] to-white ">
               Échangeons sur votre projet
             </h1>
             <p className="text-center leading-relaxed  md:leading-loose  py-6">
@@ -102,14 +93,6 @@ export default function Contact() {
               {" "}
               <DialogCloseButton />
             </div>
-
-            {/*  <a
-              href="mailto:sanctifieryawmensah55@gmail.com"
-              className="relative z-10 flex items-center gap-2 text-white hover:text-white transition-colors group"
-            >
-              <Mail className="h-5 w-5 group-hover:text-[#3E2ABF]" />
-              <span>sanctifieryawmensah55@gmail.com</span>
-            </a> */}
 
             <div className="flex justify-center mt-6">
               <div className="flex md:space-x-4">
