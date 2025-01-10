@@ -57,7 +57,7 @@ export default function Portfolio() {
                 <span className="inline-block ml-2 transform animate-wave text-4xl">
                   👋
                 </span>
-                <span className="text-[#3E2ABF] text-xl lg:text-4xl ">
+                <span className="text-xl lg:text-4xl bg-gradient-to-r from-[#3E2ABF]  to-white text-transparent bg-clip-text">
                   I&apos;m{" "}
                 </span>
                 Sanctifier Yaw-Mensah

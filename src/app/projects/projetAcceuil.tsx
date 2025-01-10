@@ -51,7 +51,7 @@ export default function ProjectsAcceuil() {
       <div className="flex justify-center ">
         <Button
           onClick={() => router.push("/projects")}
-          className="inline-block px-6 text-white bg-[#3E2ABF] shadow-sm   mt-12"
+          className="relative z-10 inline-block px-6 text-white bg-[#3E2ABF] shadow-sm   mt-12"
         >
           Voir tous les projets
         </Button>

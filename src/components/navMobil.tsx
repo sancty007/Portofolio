@@ -33,9 +33,5 @@ export default function NavMobil() {
 import React from "react";
 
 export default function navMobil() {
-  return (
-    <div>
-      <p>En cours de contruction</p>
-    </div>
-  );
+  return <div>{/*  <p>En cours de contruction</p> */}</div>;
 }

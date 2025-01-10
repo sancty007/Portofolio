@@ -10,10 +10,17 @@ export default function About() {
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
+        viewport={{ once: true }}
         className="md:gap-20 h-80 relative z-10"
       >
-        <div className="absolute inset-0 bg-[#3E2ABF] blur-3xl rounded-lg transform rotate-3 "></div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.9, delay: 0.9 }}
+          className="absolute inset-0 bg-[#3E2ABF] blur-3xl rounded-lg transform rotate-3 "
+        ></motion.div>
         <Image
           src="/images/about_me2.jpg"
           width={300}
@@ -32,7 +39,9 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="py-4 text-xl lg:text-3xl font-bold inline-block "
         >
-          {" <"}About{" / >"}
+          <span className="bg-gradient-to-r from-[#3E2ABF] via-white to-white text-transparent bg-clip-text">
+            {" <"} About{" / >"}
+          </span>
         </motion.h1>
         <motion.p
           initial={{ y: -20, opacity: 0 }}

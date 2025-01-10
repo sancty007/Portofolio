@@ -34,7 +34,7 @@ export default function ProjectsPage() {
                 <p className="text-sm text-white mb-4 line-clamp-2">
                   {project.des}
                 </p>
-                <Button className="inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
+                <Button className=" inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
                   {project.gitHub ? "Preview" : "View on GitHub"}
                 </Button>
               </div>

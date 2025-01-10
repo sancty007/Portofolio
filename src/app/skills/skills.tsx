@@ -53,10 +53,10 @@ export default function skills() {
           {Skills.map((item, index) => (
             <div
               key={index}
-              className=" group p-6 rounded-lg bg-slate-950 border border-[#3E2ABF]/15 hover:bg-white/20 transition-colors z-10"
+              className=" group p-6 rounded-lg bg-slate-950 border border-[#3E2ABF]/15  transition-colors z-10"
             >
               <item.icon className="w-12 h-12 group-hover:text-[#3E2ABF] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-[#3E2ABF]">
                 {item.title}
               </h3>
               <p className="text-gray-400 ">{item.description}</p>
