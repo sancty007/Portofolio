@@ -11,13 +11,14 @@ export default function About() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="md:gap-20 h-80 "
+        className="md:gap-20 h-80 relative z-10"
       >
+        <div className="absolute inset-0 bg-[#3E2ABF] blur-3xl rounded-lg transform rotate-3 "></div>
         <Image
           src="/images/about_me2.jpg"
           width={300}
           height={300}
-          className="w-full h-full object-cover rounded-lg border border-[#3E2ABF]/15 "
+          className="w-full h-full object-cover rounded-lg border border-[#3E2ABF]/15 relative z-10 "
           alt="about sanctifier yaw-mensah"
         />
       </motion.div>

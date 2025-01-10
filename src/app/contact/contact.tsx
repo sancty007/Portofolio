@@ -23,7 +23,7 @@ function DialogCloseButton() {
   return (
     <Dialog>
       <DialogTrigger asChild className="text-center">
-        <Button className="bg-[#3E2ABF] px-6 gap-2">
+        <Button className="bg-[#3E2ABF] px-6 gap-2 rounded-full">
           {" "}
           <Mail className="h-5 w-5 group-hover:text-[#3E2ABF]" />
           Envoyer un message{" "}
@@ -31,7 +31,9 @@ function DialogCloseButton() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-white">Envoyer un message </DialogTitle>
+          <DialogTitle className="text-white font-bold">
+            Envoyer un message{" "}
+          </DialogTitle>
           {/* <DialogDescription>
             Anyone who has this link will be able to view this.
           </DialogDescription> */}
@@ -76,14 +78,14 @@ export default function Contact() {
   return (
     <>
       <section className="relative z-10" id="contact">
-        <div className="bg-gradient-to-t  from-[#3E2ABF] via-bg-slate-9 to-transparent z-10 flex items-center justify-center md:px-2 sm:px-6  ">
+        <div className="min-h-[600px]  bg-gradient-to-t  from-[#3E2ABF] via-bg-slate-9 to-transparent z-10 flex items-center justify-center md:px-2 sm:px-6  ">
           {/*  fields on the right  */}
 
           <div className=" p-4 shadow-[#4a4379]/15 md:p-6 overflow-hidden  max-w-2xl mx-auto space-y-4">
-            <h1 className="text-xl md:text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#3E2ABF] to-white ">
+            <h1 className="text-2xl md:text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#3E2ABF] to-white ">
               Échangeons sur votre projet
             </h1>
-            <p className="text-center leading-relaxed  md:leading-loose  py-6">
+            <p className="text-center leading-relaxed  md:leading-loose  py-6 font-bold">
               Recruteur ou porteur de projet ? Discutons de comment je peux
               concrétiser vos idées ou renforcer vos équipes.
             </p>
@@ -94,7 +96,7 @@ export default function Contact() {
               <DialogCloseButton />
             </div>
 
-            <div className="flex justify-center mt-6">
+            {/*  <div className="flex justify-center mt-6">
               <div className="flex md:space-x-4">
                 <div className="relative z-10 flex  space-x-6 ">
                   <motion.a
@@ -120,7 +122,12 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+ */}
+            {/* Bottom mask using a pseudo-element */}
           </div>
+          <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#3E2ABF] to-transparent" />
+          {/* Dark background section below */}
+          <div className="bg-[#3E2ABF] h-20" />
         </div>
       </section>
     </>
