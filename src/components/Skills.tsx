@@ -3,22 +3,22 @@ import { GraduationCap, Briefcase, Code2 } from "lucide-react";
 
 const Skills = [
   {
-    icon: Code2, // Icon for development (adjust based on the library used)
-    title: "Web Development",
+    icon: Code2, // Icône pour le développement (ajuster en fonction de la bibliothèque utilisée)
+    title: "Développement Web & UI/UX",
     description:
-      "Design and development of interactive web applications using React, Django, and modern technologies.",
+      "Expérience en développement web (React, Django , Nextjs, Vuejs ) et en conception UX/UI avec Figma pour des interfaces optimisées.",
   },
   {
-    icon: Briefcase, // Icon for solutions or project management
-    title: "Project Management",
+    icon: Briefcase, // Icône pour les solutions ou la gestion de projet
+    title: "Gestion de projet",
     description:
-      "Ability to organize, plan, and deliver complex projects using Docker, Git/GitHub, and agile methodologies.",
+      "Capacité à organiser, planifier et livrer des projets complexes en utilisant Docker, Git/GitHub et des méthodologies agiles.",
   },
   {
-    icon: GraduationCap, // Icon for learning and innovation
-    title: "Continuous Learning",
+    icon: GraduationCap, // Icône pour l'apprentissage et l'innovation
+    title: "Apprentissage continu",
     description:
-      "Passionate about technology, I constantly explore new tools like AWS, Spring Boot, and Oracle database administration.",
+      "Passionné par la technologie, j'explore constamment de nouveaux outils comme AWS, Spring Boot et l'administration de base de données Oracle.",
   },
 ];
 
@@ -55,8 +55,8 @@ export default function skills() {
               key={index}
               className=" group p-6 rounded-lg bg-slate-950 border border-[#3E2ABF]/15  transition-colors z-10"
             >
-              <item.icon className="w-12 h-12 group-hover:text-[#3E2ABF] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-[#3E2ABF]">
+              <item.icon className="w-12 h-12 mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2 ">
                 {item.title}
               </h3>
               <p className="text-gray-400 ">{item.description}</p>

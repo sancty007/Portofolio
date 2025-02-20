@@ -2,22 +2,14 @@
 
 import { motion } from "framer-motion";
 
-import Skills from "./skills/skills";
-import About from "./_about/about";
-import Contact from "./contact/contact";
-/* import Nav from "@/components/nav"; */
 import Image from "next/image";
-import Background from "@/components/ui/background";
 
 import Presentation from "@/components/presentation";
 import SpotlightComponent from "@/components/SpotlightComponents";
 
-import GitHubStats from "./_GitHubStats/page";
 import { Code2 } from "lucide-react";
-import Technologies from "./_technology/page";
-import ProjectsAcceuil from "./projects/projetAcceuil";
 
-// const skills = ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS"];
+import Main from "./main/main";
 
 export default function Portfolio() {
   new Promise((resolve) => setTimeout(resolve, 2000));
@@ -36,7 +28,7 @@ export default function Portfolio() {
             className=" relative z-10 flex justify-center items-center "
           >
             <Image
-              src="/images/profil2.jpg"
+              src="/images/profil3.png"
               width={500}
               height={500}
               alt="Picture of the author"
@@ -75,23 +67,7 @@ export default function Portfolio() {
           </div>
         </header>
 
-        <main className="">
-          <Background />
-
-          {/* apropos de moi */}
-          <Skills />
-          <About />
-          {/* mes Compétences  */}
-          <Technologies />
-
-          {/* Mes Statistiques GitHub */}
-          <GitHubStats />
-          {/*  nos projects  */}
-          <ProjectsAcceuil />
-
-          {/*  Nos contact */}
-          <Contact />
-        </main>
+        <Main />
       </div>
     </div>
   );

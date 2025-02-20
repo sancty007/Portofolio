@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
-import { LinkPreview } from "@/components/ui/link-preview";
 import { useRouter } from "next/navigation";
 
 export default function ProjectsAcceuil() {
@@ -18,11 +17,7 @@ export default function ProjectsAcceuil() {
       </h1>
       <div className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 items-center justify-center gap-4 ">
         {projects.slice(0, limit).map((project) => (
-          <LinkPreview
-            key={project.id}
-            url={project.link}
-            className="relative z-10 font-bold "
-          >
+          <div key={project.id} className="relative z-10 font-bold ">
             <div className="w-full rounded-lg overflow-hidden border border-[#3E2ABF]/15">
               <div className="relative w-full h-48 overflow-hidden p-2">
                 <Image
@@ -45,7 +40,7 @@ export default function ProjectsAcceuil() {
                 </Button>
               </div>
             </div>
-          </LinkPreview>
+          </div>
         ))}
       </div>
       <div className="flex justify-center ">
@@ -53,7 +48,7 @@ export default function ProjectsAcceuil() {
           onClick={() => router.push("/projects")}
           className="relative z-10 inline-block px-6 text-white bg-[#3E2ABF] shadow-sm   mt-12"
         >
-          Voir tous les projets
+          Voir Plus
         </Button>
       </div>
     </div>

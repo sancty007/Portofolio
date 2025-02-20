@@ -8,7 +8,6 @@ import {
   SiMysql,
   SiPrisma,
   SiFirebase,
-  SiSupabase,
   SiReact,
   SiNextdotjs,
   SiTypescript,
@@ -73,16 +72,6 @@ function TechGrid() {
               icon={<SiPrisma />}
               className="text-white"
             />
-            <TechCard
-              title="Firebase"
-              icon={<SiFirebase />}
-              className="text-[#FFCA28]"
-            />
-            {/* <TechCard
-              title="Supabase"
-              icon={<SiSupabase />}
-              className="text-[#3ECF8E]"
-            />  */}
           </div>
         </div>
 
@@ -115,16 +104,6 @@ function TechGrid() {
               icon={<SiJavascript />}
               className="text-[#F7DF1E]"
             />
-            <TechCard
-              title="Vite"
-              icon={<SiVite />}
-              className="text-[#646CFF]"
-            />
-            {/* <TechCard
-              title="Redux"
-              icon={<SiRedux />}
-              className="text-[#764ABC]"
-            /> */}
             <TechCard title="Astro" icon={<SiAstro />} className="text-white" />
           </div>
         </div>

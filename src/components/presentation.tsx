@@ -9,16 +9,20 @@ export default function presentation() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className=" md:text-gray-300 "
       >
-        <span className="font-bold ">What if your applications became as </span>
-        <span className="font-bold">indispensable as your smartphone? 🥳</span>
-        Passionate about creating innovative web applications, I design{" "}
+        <span className="font-bold ">
+          Et si vos applications devenaient aussi{" "}
+        </span>
         <span className="font-bold">
-          custom solutions with modern technologies
+          indispensables que votre smartphone ? 🥳
+        </span>
+        Passionné par la création d&apos;applications web innovantes, je conçois{" "}
+        <span className="font-bold">
+          des solutions sur mesure avec des technologies modernes
         </span>{" "}
-        to provide exceptional user experiences.{" "}
+        pour offrir des expériences utilisateur exceptionnelles.{" "}
         <span className="font-bold">
-          {"<"}I create applications that make your users addicted and make a
-          difference.🦾 {" / >"}
+          {"<"}Je crée des applications qui rendent vos utilisateurs accros et
+          font une différence.🦾 {" / >"}
         </span>
       </motion.p>
     </div>

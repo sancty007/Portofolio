@@ -51,13 +51,11 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className=" leading-relaxed  md:leading-loose "
         >
-          🫡 I&apos;m a computer science student with a passion for programming
-          and cybersecurity. I&apos;ve developed a broad skill set, from
-          software development to system administration, database management,
-          and cybersecurity. I strive to learn new technologies, solve complex
-          problems, and innovate. My goal is to work on exciting projects,
-          collaborate with dynamic teams, and stay ahead in this rapidly
-          evolving field.
+          🚀 Développeur Fullstack passionné et créatif, je conçois et développe
+          des applications web performantes en combinant Next.js (TypeScript),
+          Vue.js, Node.js et Express.js. Fort d’une solide expertise en UI/UX
+          design avec Figma, je crée des interfaces intuitives et optimisées
+          pour offrir des expériences utilisateurs exceptionnelles
         </motion.p>
       </div>
     </div>
