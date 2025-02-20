@@ -14,7 +14,7 @@ export default function Nav() {
         <Navigation />
 
         <Button
-          className="md:px-6 hover:text-[#f3f3de] bg-[#3E2ABF] shadow-2xl shadow-[#3E2ABF] uppercase rounded-full gap-x-1 "
+          className="md:px-6 hover:text-[#f3f3de] border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  shadow-2xl shadow-[#3E2ABF] uppercase rounded-full gap-x-1 "
           onClick={handleDownload}
         >
           <svg

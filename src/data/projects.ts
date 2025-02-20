@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "INCUBATION",
-    des: "Insertion and support of students in the professional world",
+    des: "Insertion et soutien des étudiants dans le monde professionnel",
     link: "https://incubateur-umng.site/",
     img: "/images/univer.png",
     gitHub: true,
@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "TO Yekola na Bomoko",
-    des: "The platform offers practical skills and prepares users for the challenges of the job market.",
+    des: "La plateforme offre des compétences pratiques et prépare les utilisateurs aux défis du marché du travail.",
     link: "https://yeekola.vercel.app/",
     img: "/images/yekola.png",
     gitHub: true,
@@ -31,8 +31,8 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Mosala Project",
-    des: "Let's build together the professional future of young Congolese.",
+    title: "Projet Mosala",
+    des: "Construisons ensemble l'avenir professionnel des jeunes Congolais.",
     link: "https://projet-mossala-3mh5.vercel.app",
     img: "/images/mosala.png",
     gitHub: true,
@@ -40,8 +40,8 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "football tournament",
-    des: "Intuitive football tournament management platform for easy organization and management.",
+    title: "Tournoi de football",
+    des: "Plateforme de gestion intuitive du tournoi de football pour une organisation et une gestion faciles.",
     link: "https://github.com/sancty007/tournoit-football.git",
     img: "/images/tournoit_foot.png",
     gitHub: false,
@@ -49,8 +49,8 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "PossaCode Dev Day 2024",
-    des: "The largest gathering of developers for developers in Congo Brazzaville.",
+    title: "Journée des développeurs PossaCode 2024",
+    des: "Le plus grand rassemblement de développeurs pour les développeurs au Congo Brazzaville.",
     link: "https://github.com/sancty007/PossaCodeDevDay.git",
     img: "/images/possaCode.png",
     gitHub: false,

@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Code2 } from "lucide-react";
 
-const Skills = [
+type Skills = {
+  icon: React.FC<any>; // Type de l'icône pour le développement
+  title: string; // Titre du compétence
+  description: string; // Description de la compétence
+};
+
+const Skills: Skills[] = [
   {
     icon: Code2, // Icône pour le développement (ajuster en fonction de la bibliothèque utilisée)
     title: "Développement Web & UI/UX",
@@ -30,9 +36,9 @@ export default function skills() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
+        className="text-2xl md:text-4xl font-bold md:text-center text-white mb-12"
       >
-        {" <"}My Skills{" / >"}{" "}
+        {" <"}Compétences{" / >"}{" "}
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 0] }}

@@ -15,6 +15,7 @@ export default function ProjectsAcceuil() {
       <h1 className="text-xl  md:text-3xl   md:pb-8 md:py-12 font-bold text-white">
         {"<"}Projects{"/>"}
       </h1>
+
       <div className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 items-center justify-center gap-4 ">
         {projects.slice(0, limit).map((project) => (
           <div key={project.id} className="relative z-10 font-bold ">
@@ -35,7 +36,7 @@ export default function ProjectsAcceuil() {
                 <p className="text-sm text-white mb-4 line-clamp-2">
                   {project.des}
                 </p>
-                <Button className="inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
+                <Button className="inline-block px-6 text-white  border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  ">
                   {project.gitHub ? "Preview" : "View on GitHub"}
                 </Button>
               </div>
@@ -46,7 +47,7 @@ export default function ProjectsAcceuil() {
       <div className="flex justify-center ">
         <Button
           onClick={() => router.push("/projects")}
-          className="relative z-10 inline-block px-6 text-white bg-[#3E2ABF] shadow-sm   mt-12"
+          className="relative z-10 inline-block px-6 text-white border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  mt-12"
         >
           Voir Plus
         </Button>

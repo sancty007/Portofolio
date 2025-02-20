@@ -19,7 +19,8 @@ export default function About() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.9 }}
-          className="absolute inset-0 bg-[#3E2ABF] blur-3xl rounded-lg transform rotate-3 "
+          className="absolute inset-0 bg-[#6750fd] bg-opacity-35 blur-3xl rounded-lg transform rotate-45
+ "
         ></motion.div>
         <Image
           src="/images/about_me2.jpg"
@@ -37,7 +38,7 @@ export default function About() {
           animate={{ y: 0, opacity: 1 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="py-4 text-xl lg:text-3xl font-bold inline-block "
+          className="py-4 text-2xl lg:text-3xl font-bold inline-block "
         >
           <span className="bg-gradient-to-r from-[#3E2ABF] via-white to-white text-transparent bg-clip-text">
             {" <"} About{" / >"}

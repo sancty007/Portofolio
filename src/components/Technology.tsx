@@ -16,7 +16,7 @@ import {
   SiVite,
   SiAstro,
 } from "react-icons/si";
-
+import { RxFigmaLogo } from "react-icons/rx";
 interface TechCardProps {
   title: string;
   icon: React.ReactNode;
@@ -25,8 +25,10 @@ interface TechCardProps {
 
 function TechCard({ title, icon, className = "" }: TechCardProps) {
   return (
-    <div className="flex items-center gap-2 rounded-lg  p-4 hover:bg-[#252B36] transition-colors">
-      <span className={`text-2xl  rounded-full bg-[#1E2530] p-2 ${className}`}>
+    <div className="flex items-center gap-2 rounded-lg  p-4 hover:bg-[#252B36] transition-colors  border-2 border-[#4a32e5] border-opacity-5">
+      <span
+        className={`text-2xl  rounded-full bg-[#1E2530] p-2  border-2 border-[#4a32e5] border-opacity-15 ${className}`}
+      >
         {icon}
       </span>
       <span className="text-gray-200">{title}</span>
@@ -36,8 +38,8 @@ function TechCard({ title, icon, className = "" }: TechCardProps) {
 
 function TechGrid() {
   return (
-    <div className="py-24">
-      <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="py-24 ">
+      <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {/* Backend Section */}
         <div className="space-y-4 ">
           <h2 className="text-2xl font-bold text-white mb-6">Backend</h2>
@@ -107,6 +109,17 @@ function TechGrid() {
             <TechCard title="Astro" icon={<SiAstro />} className="text-white" />
           </div>
         </div>
+        {/* design  Section */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-white mb-6">Design UI/UX</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+            <TechCard
+              title="Figma"
+              icon={<RxFigmaLogo />}
+              className="text-[#61DAFB]"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -115,44 +128,11 @@ function TechGrid() {
 export default function Technologies() {
   return (
     <div className="container">
-      {/* <div className="container mb-8">
-        <motion.p
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="  leading-relaxed md:leading-loose "
-        >
-          I&apos;m passionate about modern technologies 😉 that transform ideas
-          into innovative solutions. I use{" "}
-          <LinkPreview
-            url="https://fr.react.dev"
-            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
-          >
-            React
-          </LinkPreview>
-          ,{" "}
-          <LinkPreview
-            url="https://tailwindcss.com/"
-            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
-          >
-            Tailwind CSS
-          </LinkPreview>
-          , Django, and{" "}
-          <LinkPreview
-            url="https://www.docker.com/"
-            className="relative z-10 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 text-[#9081f3] "
-          >
-            Docker
-          </LinkPreview>{" "}
-          for dynamic interfaces, robust systems, and smooth collaboration. Here
-          is a list of technologies I have worked with
-        </motion.p>
-      </div> */}
       <motion.h1
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="text-xl md:text-3xl font-bold inline-block py-12"
+        className="text-2xl md:text-3xl font-bold inline-block py-12"
       >
         {"<Technologies />"}
       </motion.h1>
