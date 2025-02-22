@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
@@ -28,9 +29,11 @@ export default function ProjectsPage() {
                 <p className="text-sm text-white mb-4 line-clamp-2">
                   {project.des}
                 </p>
-                <Button className=" inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
-                  {project.gitHub ? "Preview" : "View on GitHub"}
-                </Button>
+                <Link href={project.link}>
+                  <Button className=" inline-block px-6 text-white bg-[#3E2ABF] shadow-sm shadow-[#3E2ABF]">
+                    {project.gitHub ? "Preview" : "View on GitHub"}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
