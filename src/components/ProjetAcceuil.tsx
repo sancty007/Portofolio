@@ -5,6 +5,7 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function ProjectsAcceuil() {
   const router = useRouter();
@@ -36,9 +37,11 @@ export default function ProjectsAcceuil() {
                 <p className="text-sm text-white mb-4 line-clamp-2">
                   {project.des}
                 </p>
-                <Button className="inline-block px-6 text-white  border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  ">
-                  {project.gitHub ? "Preview" : "View on GitHub"}
-                </Button>
+                <Link href={project.link}>
+                  <Button className=" inline-block px-6 text-white  border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  hover:bg-[#3E2ABF]/20 ">
+                    {project.gitHub ? "Preview" : "View on GitHub"}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -47,7 +50,7 @@ export default function ProjectsAcceuil() {
       <div className="flex justify-center ">
         <Button
           onClick={() => router.push("/projects")}
-          className="relative z-10 inline-block px-6 text-white border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  mt-12"
+          className="relative z-10 inline-block px-6 text-white border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  mt-12 hover:bg-[#3E2ABF]/20 "
         >
           Voir Plus
         </Button>

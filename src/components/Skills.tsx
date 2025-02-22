@@ -30,7 +30,10 @@ const Skills: Skills[] = [
 
 export default function skills() {
   return (
-    <section className="relative z-10 py-24 lg:py-24 lg:mt-4" id="skills">
+    <section
+      className="container mx-auto relative z-10 py-24 lg:py-24 lg:mt-4"
+      id="skills"
+    >
       <motion.h2
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -48,7 +51,7 @@ export default function skills() {
           _
         </motion.span>
       </motion.h2>
-      <div className="container mx-auto bg-slate-950">
+      <div className=" bg-slate-950">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
