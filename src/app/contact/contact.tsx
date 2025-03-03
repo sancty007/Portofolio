@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import ContactForm from "@/components/ContactForms";
 
 function DialogCloseButton() {
   return (
@@ -26,40 +27,11 @@ function DialogCloseButton() {
         <Button className="bg-[#3E2ABF] px-6 gap-2 rounded-full">
           {" "}
           <Mail className="h-5 w-5 group-hover:text-[#3E2ABF]" />
-          Envoyer un message{" "}
+          Envoyez-moi un message{" "}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="text-white font-bold">
-            Envoyer un message{" "}
-          </DialogTitle>
-          {/* <DialogDescription>
-            Anyone who has this link will be able to view this.
-          </DialogDescription> */}
-        </DialogHeader>
-        <div className="flex items-center space-x-2">
-          <div className="grid flex-1 gap-2">
-            <Label htmlFor="link" className="sr-only">
-              Link
-            </Label>
-            <Input
-              id="link"
-              defaultValue="sanctifieryawmensah55@gmail.com"
-              readOnly
-            />
-          </div>
-          <Button type="submit" size="sm" className="py-4 gap-2">
-            <span className="sr-only">Copy</span>
-            <span>copier l&apos;email</span>
-            <Copy />
-          </Button>
-        </div>
-        <DialogFooter className="sm:justify-start">
-          <DialogClose asChild>
-            <Button className="bg-[#3E2ABF]">Fermer</Button>
-          </DialogClose>
-        </DialogFooter>
+        <ContactForm />
       </DialogContent>
     </Dialog>
   );

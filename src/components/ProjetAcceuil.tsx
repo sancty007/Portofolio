@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import ButtonSys from "./ui/ButtonSys";
 
 export default function ProjectsAcceuil() {
   const router = useRouter();
@@ -38,9 +39,9 @@ export default function ProjectsAcceuil() {
                   {project.des}
                 </p>
                 <Link href={project.link}>
-                  <Button className=" inline-block px-6 text-white  border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20  hover:bg-[#3E2ABF]/20 ">
+                  <ButtonSys>
                     {project.gitHub ? "Preview" : "View on GitHub"}
-                  </Button>
+                  </ButtonSys>
                 </Link>
               </div>
             </div>

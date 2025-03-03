@@ -3,6 +3,7 @@ import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ButtonBack } from "@/components/ButtonBack";
+import ButtonSys from "@/components/ui/ButtonSys";
 
 export default function ProjectsPage() {
   return (
@@ -32,9 +33,9 @@ export default function ProjectsPage() {
                   {project.des}
                 </p>
                 <Link href={project.link}>
-                  <Button className=" inline-block px-6 text-white  border-2 border-[#4a32e5] bg-[#4a32e5] bg-opacity-50 border-opacity-20 hover:bg-[#3E2ABF]/20 ">
+                  <ButtonSys>
                     {project.gitHub ? "Preview" : "View on GitHub"}
-                  </Button>
+                  </ButtonSys>
                 </Link>
               </div>
             </div>
